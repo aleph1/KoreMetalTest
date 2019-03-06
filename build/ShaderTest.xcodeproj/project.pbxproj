@@ -1,0 +1,1483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC1C5DC4-6328-4DB9-BE84-F3BE2389D230 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D2FBAF3-C56E-4EA7-8D3B-09B16D3BC684 /* Metal.framework */; };
+		42277836-632E-4517-8746-09DE2C90A983 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AE6F21-1BA2-4203-84F8-D8E1AE37CB5C /* MetalKit.framework */; };
+		078384A1-6C64-47DF-8519-1D25245677E4 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F903FD3D-8BE1-4A05-AB4B-0E2AB184ECFC /* IOKit.framework */; };
+		CB03AE3C-8B68-4920-B5EE-0FFA2D871802 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A06755-6346-4522-8441-EA3022125FC8 /* Cocoa.framework */; };
+		557DE26F-2231-4B7D-8C40-2C13B6EF8603 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 336D33EE-2273-4D34-9415-D53AA41362CE /* AppKit.framework */; };
+		FF427294-81F1-439E-81E0-1B71DF0838B6 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14DF3EA-A327-4EFE-9BC6-9BFF5D65377C /* CoreAudio.framework */; };
+		A1419377-EB56-4850-8D09-E2C38C37A3DF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F14D94-9C4E-4178-BFE4-725DA09D553C /* CoreData.framework */; };
+		F539A536-D8E6-4618-94BD-DA8242B5C119 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5014FBA3-1869-462D-A94B-64DB74C7DBB1 /* CoreMedia.framework */; };
+		CFE7EB95-4CDF-426E-AC61-016D187B5E17 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50654CF0-ACCF-4FA6-A367-C59E0B90FBA9 /* CoreVideo.framework */; };
+		409D5982-71A6-4800-969E-C33CFC568484 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B01831A-6DA9-46B2-9860-0A8F5BDFCBD5 /* AVFoundation.framework */; };
+		E6D53FB0-FE71-45CB-B3C0-E628CED017BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFD7B7B-2973-4378-A11D-EEADC1B82A20 /* Foundation.framework */; };
+		86E88C94-7227-4FB0-A481-795FB7FA5822 /* Deployment in Resources */ = {isa = PBXBuildFile; fileRef = 28A30220-41EB-499F-A2E8-B28866E7679E /* Deployment */; };
+		0517DF5B-A3FB-48B7-85AA-F3E78D4DA386 /* Sources/KoreMetalTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD5E0CE6-89DC-4881-AD4E-13F9B0FE431F /* Sources/KoreMetalTest.cpp */; };
+		602B43C1-9176-4C2F-A677-73D768B9FA7E /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Audio3/A3onA2/Sources/Kore/Audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7E04BDD-AA40-440A-BCD4-13D8EDB8912A /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Audio3/A3onA2/Sources/Kore/Audio.cpp */; };
+		2E35C2D7-AE85-4B8C-B6A6-754F2A8C8AFA /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Audio3/A3onA2/Sources/Kore/TextToSpeech.winrt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09C65A8D-B5F3-47BB-918C-AE0E19B51449 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Audio3/A3onA2/Sources/Kore/TextToSpeech.winrt.cpp */; };
+		6A6B508A-A7C0-4BCC-B28C-5F1195CCE6FE /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/G4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DBB9F29-D82E-4467-BFC7-12FC200F2BBC /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/G4.cpp */; };
+		450E71E7-EC87-452A-834A-426493D1DE62 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/IndexBufferImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00ADEF30-F30F-435D-A64D-5AC665B06273 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/IndexBufferImpl.cpp */; };
+		97D880BC-F271-4B37-B482-F95877569323 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/PipelineStateImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13952B6-3F2F-48C7-8BFE-91D7BDA8A3BC /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/PipelineStateImpl.cpp */; };
+		5E602D82-0176-400C-9D79-44BA304230DD /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/RenderTargetImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 414A465F-58DB-4614-B91E-07B71F97ABB0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/RenderTargetImpl.cpp */; };
+		8A936458-0271-4897-A248-E62DBF6623D9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/ShaderImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C59B115-96FF-4361-A089-A3386B9EB8CC /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/ShaderImpl.cpp */; };
+		AC3AADF9-CFDF-4C56-89F5-E82956B04E29 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureArrayImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1436C2D-7BD7-44E8-990C-B5014E96959A /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureArrayImpl.cpp */; };
+		9F815077-4F30-4D3D-818B-53DBFA3C8FA5 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28C8297B-FE32-406E-867C-1E67DEE0BD95 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureImpl.cpp */; };
+		0E3B09DD-498F-4AA6-BD31-9FBFB1F41824 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/VertexBufferImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22911DAB-D8FE-4BB7-A2A1-98E055583723 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/VertexBufferImpl.cpp */; };
+		D23D4589-70EC-4E2C-A5E9-A8FFBB2ACBC6 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/CommandList5Impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 249AD4FC-8B78-4EA4-9CB1-436C449A8E5B /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/CommandList5Impl.mm */; };
+		13E8068A-6311-4822-BBE7-EE71DAB4C2AB /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ComputeImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF861E48-446F-496A-A6F0-AF58ABF93075 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ComputeImpl.mm */; };
+		850A2580-A001-46FD-BD20-7E7192E0C816 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ConstantBuffer5Impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = EE2214AA-B79A-4ECF-B6ED-1C7BC521711C /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ConstantBuffer5Impl.mm */; };
+		47636C88-E0D2-45EA-8EDA-E9D9506CAE86 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/IndexBuffer5Impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDEEE392-F72B-4E0F-9A17-EC86243610F6 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/IndexBuffer5Impl.mm */; };
+		2A1C3FF4-CC09-4D57-85CC-2F981D595A43 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Metal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 08618A49-3475-4982-84F3-D9431E1EB6A7 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Metal.mm */; };
+		8CBA36A9-1177-4A7F-B3E8-09F2AFF53CC6 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/PipelineState5Impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6A1B0B13-C308-4AF1-9A8B-4EF311A19278 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/PipelineState5Impl.mm */; };
+		E22FD7CB-448E-4325-8FC2-9909FAF519C9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/RenderTarget5Impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = B2A72E16-0FBC-40FC-8A71-45F645F0EB52 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/RenderTarget5Impl.mm */; };
+		08C4F736-EEA3-4B4B-8B78-8C79A6EEF1C8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Shader5Impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = ACB807D5-7377-4B7C-9223-E19FFAC95B8C /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Shader5Impl.mm */; };
+		42F80620-5581-4C04-9E5E-404A0E711B1C /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Texture5Impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 129293F3-FC97-4D79-9219-C41C9CC227E7 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Texture5Impl.mm */; };
+		8218B275-41A3-4088-8D65-CA5AC106A331 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/VertexBuffer5Impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8319D6BB-4A40-43C8-BA9B-8E46128ADC78 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/VertexBuffer5Impl.mm */; };
+		54B385B4-F899-418D-A209-7338A8BE49DF /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Http.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2D2ECCB4-F10F-4F4C-BD64-6973EC681127 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Http.mm */; };
+		FC51241C-3ED0-46C7-AB40-D05E7A3FC615 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Thread.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEA9B113-29E3-4ACE-A24F-C24803037AB4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Thread.mm */; };
+		A5253978-005D-4EC8-B11A-C392E7E02841 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Video.mm in Sources */ = {isa = PBXBuildFile; fileRef = A3F82E98-EBB3-4750-AF53-A0268EEFD55A /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Video.mm */; };
+		4FF46FEC-51EC-456D-B406-D922CE17485D /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2CD38A-941E-44EE-94DC-08C5874D4A94 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Event.cpp */; };
+		9B9FAE71-C729-444B-B47A-568A319F47EC /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11EA7D29-F1FD-49B9-A31A-98D38228B279 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Mutex.cpp */; };
+		F665E1FC-4642-49DB-86DD-30BB8E9C01A0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Semaphore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B87A6C1-E79E-4E33-9EFE-AD4C20F1C041 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Semaphore.cpp */; };
+		9B59BA4A-E30C-4818-9B92-30EFF975F348 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E306630A-F656-4949-BE2F-7C71BFBEC301 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Thread.cpp */; };
+		9DAB638A-DBDD-4A01-AD96-BF1CEF7F6FE9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/ThreadLocal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03AE860E-7540-412D-BA03-5DBDD6D5EFB5 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/ThreadLocal.cpp */; };
+		3E48C13D-1963-479C-A7F9-DC8361380E74 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1C37C3D-1891-407C-9656-6EB89A340003 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Audio.cpp */; };
+		D9C5BB01-CAC2-4AA8-ACA5-66BA8A9BC00A /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/BasicOpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3BDEBBE-7799-4BFE-81C2-0E75C54DE549 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/BasicOpenGLView.mm */; };
+		52F72D9D-937D-4CD0-BCA0-DC1B144485F9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Display.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A53430A-FAF2-42C7-9396-AA6A53011A44 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Display.mm */; };
+		C73CE1A6-E6F8-4117-859F-449B371B2E7B /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/System.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B82E98C5-8671-4485-9B35-12CBE6C575A4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/System.cpp */; };
+		8D8D0650-85C8-4926-9E6D-733E3D18CDA6 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/System.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8345D93-2C43-4B9B-9080-E9AE74023EB9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/System.mm */; };
+		F8A3B396-9121-4C8A-89B4-ECB784C3E506 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5A90310-596B-429E-AB04-0A2262336758 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Window.cpp */; };
+		D5F0F4AB-2A73-450E-BE17-0FE4700973DA /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDGamepad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 294F8A2D-F1C4-4955-A1B1-500C3BC29BB7 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDGamepad.cpp */; };
+		48DE32A1-C79D-4164-B820-902BF3643985 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EF811C0-04F7-420E-8468-495864EC95D4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDManager.cpp */; };
+		B463CED9-7FAD-4E3D-9D4D-A7AF28126DFB /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/Mouse.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFC080-4398-4226-A781-998AA1AE61AA /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/Mouse.mm */; };
+		790F1A8B-5CF1-44DF-AE66-FDB1719BC186 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Error.c in Sources */ = {isa = PBXBuildFile; fileRef = 18A6FAC1-2312-4924-B25C-3244E3159D58 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Error.c */; };
+		2CB9B040-A2CB-475F-8458-5816F5891CED /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Log.c in Sources */ = {isa = PBXBuildFile; fileRef = E1F28B70-F361-46AC-A7FC-B68385263694 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Log.c */; };
+		270955CE-8FC6-4A16-8791-A0067C8DE8D4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/CodeStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE8D6613-2BFE-4F78-8152-DA317BB9130B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/CodeStyle.cpp */; };
+		3F29A520-2AD2-4DBD-894C-E4F5FE0482FC /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B87F11D-62BE-420C-ADB3-51923EB57897 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Error.cpp */; };
+		0FA00883-74DF-4C7B-BC49-9CBD9EA264AD /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9570B24C-980E-4E98-98C0-14F53C02733E /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Log.cpp */; };
+		3895F2EF-7871-472B-8B77-21EB40D856AF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/System.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D3AA8BC-3637-48F6-97BF-A93CCE4801CF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/System.cpp */; };
+		72444874-1F07-47FC-86F2-399238042109 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B220E192-679F-43DF-B68D-41C0716D3A25 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Audio.cpp */; };
+		AAA37686-9371-4DE5-82A0-C41D790CD057 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13DCF32-8BC5-427B-81B0-BF50EAFB76D8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Sound.cpp */; };
+		C11FE437-AA27-49E6-B44D-E7C2FCD71EDD /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/SoundStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA4EC588-578F-4310-9677-A7C57DAB2ECE /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/SoundStream.cpp */; };
+		9CC134DF-BB84-4979-BAB5-35E967A36E52 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/stb_vorbis.c in Sources */ = {isa = PBXBuildFile; fileRef = 82203D8B-CE91-4B97-8089-0171AE7A3458 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/stb_vorbis.c */; };
+		5FD8217C-D6A2-4D8C-8425-8785719F8E53 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio2/Audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C25ADAF-6449-44DF-9412-9F8258D1FC5A /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio2/Audio.cpp */; };
+		59A1BC36-20B1-4E9B-9BF6-0F3CED3AFA1C /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio3/Audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEE10B-0D66-45E7-8D45-42E2CADABEBB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio3/Audio.cpp */; };
+		FD982B92-E7F2-4C15-8235-0F874381D72F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F498B12-B51D-40EC-B032-7CB0EA83D456 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Color.cpp */; };
+		2D30D987-07D4-4EFD-9696-8F39A2F2D03A /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2781C98-E24C-4876-91FE-8AB5DCD1E4D8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Graphics.cpp */; };
+		38B91571-1E6B-47BF-BC18-92DF8799F98E /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 451F231C-6062-4381-AA74-3E12578608BA /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Image.cpp */; };
+		2C8EAC92-B046-4967-8AC5-7C9A8D6C1621 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F09F551D-0313-4991-8219-594F181318A6 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Graphics.cpp */; };
+		EE46FB16-BB55-4218-90CE-D3CF767E1E0C /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Kravur.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D84597E5-37FF-4348-B0A6-F7311F8BAF84 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Kravur.cpp */; };
+		F01A0756-C56A-4EBB-BD8A-2AD59757A4AF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42F7ADB0-4477-4535-B19C-A8059DCD1E91 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Graphics.cpp */; };
+		69329010-E4C7-4D9C-999A-2FEB2783A749 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1D231-7BED-4F86-8AE9-E0E03C46A572 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Texture.cpp */; };
+		BCA6C33B-A64C-451A-A919-D5B41979F9A0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F132E00-518D-4CD0-8B3C-B77F41DEA48F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Graphics.cpp */; };
+		0302DB9D-2B7D-40BC-9C76-E9023823B039 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/PipelineState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8F1A445-E5D0-434A-969F-3CFF9F349692 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/PipelineState.cpp */; };
+		EC0AD84C-00B5-48DB-9F9D-0ED56AC1B2F2 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA5A311D-B191-4569-8674-D030BEEA9392 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Texture.cpp */; };
+		3D353E08-23D6-40BB-82E0-B463A40B76D8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/TextureArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E32729D0-B634-4A7D-883D-AA295F773DD9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/TextureArray.cpp */; };
+		5D0AD084-C3B2-46B9-8864-C289D6CF1236 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/CommandList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E39D71C-6360-4F1C-B5AC-3E289C79EC61 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/CommandList.cpp */; };
+		2332F5D5-C315-45B3-BC25-CDA435681C3D /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/ConstantBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0B80002-5D3C-4EC3-BC45-A7165662D20D /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/ConstantBuffer.cpp */; };
+		FB865D60-E5C2-4A88-BFCD-5F826AD28D7F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CF83-31BF-446D-A594-705B46FED401 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Graphics.cpp */; };
+		55BCAAC6-001C-45B4-8A77-6C3A8F80907D /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/PipelineState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F47DE61-C158-4017-BE37-55C06118704A /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/PipelineState.cpp */; };
+		47020805-0EDD-44FA-8F3A-3029DA91BF6F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9340633D-02A4-44F8-A72F-8DE3BAC87996 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Texture.cpp */; };
+		C2BC874E-7C94-488C-AD2F-5BE8E20BBABB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/BufferReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2E17F77-6232-443F-82B7-49246B5FB993 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/BufferReader.cpp */; };
+		9734ED14-6F62-4D9C-98E1-F3103F0BFE22 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileReader.winrt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54BB591-4AA9-4A9E-8629-48F294334B87 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileReader.winrt.cpp */; };
+		487CE3C0-9472-408A-AA33-AA39B4BD06A3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D5CD275-DF44-42EB-B770-6176AB7F7E84 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileWriter.cpp */; };
+		9CF5A6BD-F1A3-4395-9589-477E71A096BC /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A5C11B6-CA06-49F4-80F0-8BFD3AB4D15D /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Reader.cpp */; };
+		23E5E22A-A7E5-4E06-93DF-4D64D5DBD1BE /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 875C5292-2F5B-433C-AEE0-D9E5D55CCE57 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Writer.cpp */; };
+		AE52A1FB-036A-40A0-830F-073476A59661 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DACF24D-E247-498F-92B5-99504C8A0B5B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4.c */; };
+		67C889CF-71CD-49C2-BD8E-1125BBC3ED26 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4frame.c in Sources */ = {isa = PBXBuildFile; fileRef = 6040008D-7CCD-4659-BD32-51F469C9FAA2 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4frame.c */; };
+		E35CEC1F-06C7-42C3-9F99-2C23BB358C49 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4hc.c in Sources */ = {isa = PBXBuildFile; fileRef = 9555FA1B-FDDD-47EB-B1C4-A3E273EB72E3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4hc.c */; };
+		B6F6DAF1-19E1-4946-8FED-5B3A59F173AF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/xxhash.c in Sources */ = {isa = PBXBuildFile; fileRef = 954601D0-B622-4A12-B24F-23B84CE61EDF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/xxhash.c */; };
+		AA62A549-4EAA-47D1-A7FB-4C7DF10068CC /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Gamepad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA104-F7F4-469A-B82B-A18E7C9194F3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Gamepad.cpp */; };
+		9BA5B718-08E2-4C1E-B186-50E8242AE3EB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Keyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D25339-6794-4C9F-95C4-A61947F59149 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Keyboard.cpp */; };
+		3E7022C0-B009-457E-852E-BCA4A44FB2BD /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Mouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4809E27D-F7D8-4D47-816B-ED755A3BC9D0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Mouse.cpp */; };
+		A0202C94-5BE1-4C92-85B8-C8BDC43E5E86 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Pen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEA12D8E-C3C5-4F2B-A44F-620070A3D956 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Pen.cpp */; };
+		6FC5D3E6-AC40-4BC5-AE8D-8DB869429D3C /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Sensor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7CF8A02-CEBB-49DD-B598-F1C346710F5E /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Sensor.cpp */; };
+		75427269-5BF6-4222-AF59-C1AFD5791E7F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Surface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 953E99E9-D631-4232-ACA8-71C9E37B91E3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Surface.cpp */; };
+		69BE74F8-36F3-43A9-AFFB-A1DCEEF065A3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCE53C26-6AEA-4BDA-B783-90A5492C74A4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Core.cpp */; };
+		099EC34F-D11D-4D02-825F-179E77F9B96A /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0D615-09EF-4214-B1A4-8C202A20EBA9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Quaternion.cpp */; };
+		3E12A8CD-49F4-4F75-8F9E-D9D9640DBB2F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F30BFD30-7CF7-4F56-BE96-16768C61FDDF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Random.cpp */; };
+		C510C123-BF0A-421A-A0D2-6A6300D60F02 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C83E0C43-7FB4-4447-B4E6-1BAAB5768137 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Connection.cpp */; };
+		EC2BA02A-A38F-4869-8D3B-2152444877FD /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Http.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6AB7562-A73C-493B-8F28-D917BD9B36CB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Http.cpp */; };
+		6BA561E2-4FBF-49FF-B8E0-15C6D9BFFA03 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 312F7D62-D08D-4461-A6BE-CE89A6BB71DF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Socket.cpp */; };
+		21BB5A55-067F-4E1F-BDEB-43DE9C3155B5 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/CameraImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6F92BF6-14BF-48DD-800A-89BB1CB4E9ED /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/CameraImage.cpp */; };
+		94586246-D6FB-41C9-B504-5E3F1C559C74 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/SensorState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FDB0E35-ECA6-4B44-81E4-B3E778B02651 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/SensorState.cpp */; };
+		3D3E5A67-C9BD-4DD4-B6CA-FED8D357CEA7 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPose.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 114EC0E1-3522-4AD3-B1A3-BC8DA097D923 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPose.cpp */; };
+		4E6E7DE9-854F-4A65-B760-274B9A5BA1D7 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPoseState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5366BE87-799D-4697-8C05-D0DB04CF211B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPoseState.cpp */; };
+		3DDD99FA-5A79-41A7-A303-43EC5DAE54A5 /* build/Sources/g1.frag.metal in Sources */ = {isa = PBXBuildFile; fileRef = C75BE4D1-DFFC-4574-9886-80E28F6DE03E /* build/Sources/g1.frag.metal */; };
+		F8905971-0D52-419E-A424-5938FB4D84F6 /* build/Sources/g1.vert.metal in Sources */ = {isa = PBXBuildFile; fileRef = CF55C34E-6D87-4DFA-AAE6-738585A6491F /* build/Sources/g1.vert.metal */; };
+		050D21AF-3CBE-4EFB-AE8C-B317FEE74A29 /* build/Sources/painter-colored.frag.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9199D01A-F0BE-4E46-8443-19F2D98F1D63 /* build/Sources/painter-colored.frag.metal */; };
+		6530B4BE-EDE9-4511-A9CF-976A71D3F5C6 /* build/Sources/painter-colored.vert.metal in Sources */ = {isa = PBXBuildFile; fileRef = 732061F5-B502-45FE-A548-151BC4F68D96 /* build/Sources/painter-colored.vert.metal */; };
+		B90A51A9-5D8D-4135-92D8-E4098D917CD9 /* build/Sources/painter-image.frag.metal in Sources */ = {isa = PBXBuildFile; fileRef = 764A46D3-8593-4717-BCCD-2CE81C2EEDC7 /* build/Sources/painter-image.frag.metal */; };
+		81BF80F1-EAD2-4560-90B7-EB51B4C1A080 /* build/Sources/painter-image.vert.metal in Sources */ = {isa = PBXBuildFile; fileRef = F6C4D9D6-352B-4430-BB28-F9A5365B66A2 /* build/Sources/painter-image.vert.metal */; };
+		E1FDFAF7-670D-4BF5-AF1B-696D77E18728 /* build/Sources/painter-text.frag.metal in Sources */ = {isa = PBXBuildFile; fileRef = 610E974D-4A51-4D7E-9C26-126B7E1B72CC /* build/Sources/painter-text.frag.metal */; };
+		2EE005E7-4B74-4E5E-9BAC-775373B609F1 /* build/Sources/painter-text.vert.metal in Sources */ = {isa = PBXBuildFile; fileRef = 098D53E3-4202-46F6-B560-26B7618D645F /* build/Sources/painter-text.vert.metal */; };
+		205B6D37-8A98-4325-9360-59BCCE0D0895 /* build/Sources/painter-video.frag.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1C2019AF-3848-4F98-810D-AF6479C97ED0 /* build/Sources/painter-video.frag.metal */; };
+		E1ED7C1B-84DD-4E9E-86E1-BB0C1BFA3363 /* build/Sources/painter-video.vert.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4F6EA6C3-C49B-4C8C-BA8D-054E4E5A3170 /* build/Sources/painter-video.vert.metal */; };
+		73548A10-71AF-445C-8E2D-C7990D0CE0BC /* build/Sources/shader.frag.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7580EE07-F6A3-444B-B984-799E6D30B101 /* build/Sources/shader.frag.metal */; };
+		B1319D02-CC77-4D4E-9416-F60B27D6E161 /* build/Sources/shader.vert.metal in Sources */ = {isa = PBXBuildFile; fileRef = 24C73AF6-4514-4725-969E-C4C881BF21FC /* build/Sources/shader.vert.metal */; };
+		50369F2D-9547-4D64-84C3-F82B1EE0076A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40664882-9468-4F52-BB47-48ED39EB77EE /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00FB0BB6-EE4B-451C-A64E-0EB6AAB4023B /* ShaderTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ShaderTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D2FBAF3-C56E-4EA7-8D3B-09B16D3BC684 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		58AE6F21-1BA2-4203-84F8-D8E1AE37CB5C /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		F903FD3D-8BE1-4A05-AB4B-0E2AB184ECFC /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		A6A06755-6346-4522-8441-EA3022125FC8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		336D33EE-2273-4D34-9415-D53AA41362CE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F14DF3EA-A327-4EFE-9BC6-9BFF5D65377C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		77F14D94-9C4E-4178-BFE4-725DA09D553C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5014FBA3-1869-462D-A94B-64DB74C7DBB1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		50654CF0-ACCF-4FA6-A367-C59E0B90FBA9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		6B01831A-6DA9-46B2-9860-0A8F5BDFCBD5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6AFD7B7B-2973-4378-A11D-EEADC1B82A20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		28A30220-41EB-499F-A2E8-B28866E7679E /* Deployment */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Deployment; path = "/Users/dbarber/Development/KoreMetalTest/Deployment"; sourceTree = "<group>"; };
+		AD5E0CE6-89DC-4881-AD4E-13F9B0FE431F /* Sources/KoreMetalTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "KoreMetalTest.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Sources/KoreMetalTest.cpp"; sourceTree = "<group>"; };
+		75C4762A-4ABB-49ED-99E4-D9B090B94DA9 /* Sources/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Sources/pch.h"; sourceTree = "<group>"; };
+		32134D68-D182-4AAB-9621-5BF84633D3FC /* Sources/Shaders/shader.frag.glsl */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "shader.frag.glsl"; path = "/Users/dbarber/Development/KoreMetalTest/Sources/Shaders/shader.frag.glsl"; sourceTree = "<group>"; };
+		6EAB7B81-09EA-4B50-B5D1-FFA0C39C8361 /* Sources/Shaders/shader.vert.glsl */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "shader.vert.glsl"; path = "/Users/dbarber/Development/KoreMetalTest/Sources/Shaders/shader.vert.glsl"; sourceTree = "<group>"; };
+		F7E04BDD-AA40-440A-BCD4-13D8EDB8912A /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Audio3/A3onA2/Sources/Kore/Audio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Audio.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Audio3/A3onA2/Sources/Kore/Audio.cpp"; sourceTree = "<group>"; };
+		09C65A8D-B5F3-47BB-918C-AE0E19B51449 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Audio3/A3onA2/Sources/Kore/TextToSpeech.winrt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "TextToSpeech.winrt.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Audio3/A3onA2/Sources/Kore/TextToSpeech.winrt.cpp"; sourceTree = "<group>"; };
+		982CE435-92F7-4BEB-B0E8-76E7C2FEC86F /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Audio3/A3onA2/Sources/Kore/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Audio3/A3onA2/Sources/Kore/pch.h"; sourceTree = "<group>"; };
+		5DBB9F29-D82E-4467-BFC7-12FC200F2BBC /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/G4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "G4.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/G4.cpp"; sourceTree = "<group>"; };
+		51B3A818-9F55-43F8-8CCE-A87F4D2D5694 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/G4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "G4.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/G4.h"; sourceTree = "<group>"; };
+		60EE8E3A-5BDE-4281-B949-C940DD0A7A12 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/GraphicsImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GraphicsImpl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/GraphicsImpl.h"; sourceTree = "<group>"; };
+		00ADEF30-F30F-435D-A64D-5AC665B06273 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/IndexBufferImpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "IndexBufferImpl.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/IndexBufferImpl.cpp"; sourceTree = "<group>"; };
+		1BF6F319-61AA-428B-825A-0200DEE5415B /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/IndexBufferImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "IndexBufferImpl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/IndexBufferImpl.h"; sourceTree = "<group>"; };
+		B13952B6-3F2F-48C7-8BFE-91D7BDA8A3BC /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/PipelineStateImpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "PipelineStateImpl.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/PipelineStateImpl.cpp"; sourceTree = "<group>"; };
+		9A21B8BC-2F99-42B9-8569-0002A584834B /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/PipelineStateImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PipelineStateImpl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/PipelineStateImpl.h"; sourceTree = "<group>"; };
+		414A465F-58DB-4614-B91E-07B71F97ABB0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/RenderTargetImpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "RenderTargetImpl.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/RenderTargetImpl.cpp"; sourceTree = "<group>"; };
+		89510E33-A0B4-4EA2-8F17-C88D37AFAAB8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/RenderTargetImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RenderTargetImpl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/RenderTargetImpl.h"; sourceTree = "<group>"; };
+		5C59B115-96FF-4361-A089-A3386B9EB8CC /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/ShaderImpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "ShaderImpl.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/ShaderImpl.cpp"; sourceTree = "<group>"; };
+		D01359DB-C0E7-42BC-B334-5964898E6A09 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/ShaderImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ShaderImpl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/ShaderImpl.h"; sourceTree = "<group>"; };
+		A1436C2D-7BD7-44E8-990C-B5014E96959A /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureArrayImpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "TextureArrayImpl.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureArrayImpl.cpp"; sourceTree = "<group>"; };
+		7D709E10-A4C4-49C6-A1D4-B84C01081A01 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureArrayImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TextureArrayImpl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureArrayImpl.h"; sourceTree = "<group>"; };
+		28C8297B-FE32-406E-867C-1E67DEE0BD95 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureImpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "TextureImpl.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureImpl.cpp"; sourceTree = "<group>"; };
+		4E5C9138-D684-4881-A69C-B86009078CE0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TextureImpl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureImpl.h"; sourceTree = "<group>"; };
+		22911DAB-D8FE-4BB7-A2A1-98E055583723 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/VertexBufferImpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "VertexBufferImpl.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/VertexBufferImpl.cpp"; sourceTree = "<group>"; };
+		23281095-662F-4969-8482-7710E3A50E46 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/VertexBufferImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VertexBufferImpl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/VertexBufferImpl.h"; sourceTree = "<group>"; };
+		648F8E52-A1A8-4C65-A80F-B9F71A0D645E /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/pch.h"; sourceTree = "<group>"; };
+		77ECF58F-2E81-453A-9635-73B4DB6F9C91 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/CommandList5Impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CommandList5Impl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/CommandList5Impl.h"; sourceTree = "<group>"; };
+		249AD4FC-8B78-4EA4-9CB1-436C449A8E5B /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/CommandList5Impl.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "CommandList5Impl.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/CommandList5Impl.mm"; sourceTree = "<group>"; };
+		A93D7BF1-B8D1-409B-B8D3-E525818D048C /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ComputeImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ComputeImpl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ComputeImpl.h"; sourceTree = "<group>"; };
+		BF861E48-446F-496A-A6F0-AF58ABF93075 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ComputeImpl.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "ComputeImpl.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ComputeImpl.mm"; sourceTree = "<group>"; };
+		0077A57B-2327-40E4-8915-09E449E67C7E /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ConstantBuffer5Impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ConstantBuffer5Impl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ConstantBuffer5Impl.h"; sourceTree = "<group>"; };
+		EE2214AA-B79A-4ECF-B6ED-1C7BC521711C /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ConstantBuffer5Impl.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "ConstantBuffer5Impl.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ConstantBuffer5Impl.mm"; sourceTree = "<group>"; };
+		18C4AE72-02AB-4C9D-8798-59247F788EC8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Graphics5Impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Graphics5Impl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Graphics5Impl.h"; sourceTree = "<group>"; };
+		291B0A30-EF90-4D7B-8576-2ABF68CCA356 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/IndexBuffer5Impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "IndexBuffer5Impl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/IndexBuffer5Impl.h"; sourceTree = "<group>"; };
+		FDEEE392-F72B-4E0F-9A17-EC86243610F6 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/IndexBuffer5Impl.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "IndexBuffer5Impl.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/IndexBuffer5Impl.mm"; sourceTree = "<group>"; };
+		62F2905D-03C2-4589-98C2-47C8FE31DB45 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Metal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Metal.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Metal.h"; sourceTree = "<group>"; };
+		08618A49-3475-4982-84F3-D9431E1EB6A7 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Metal.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "Metal.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Metal.mm"; sourceTree = "<group>"; };
+		7B20BEE4-53DC-40D0-BC25-E0776BBFDE2A /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/PipelineState5Impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PipelineState5Impl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/PipelineState5Impl.h"; sourceTree = "<group>"; };
+		6A1B0B13-C308-4AF1-9A8B-4EF311A19278 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/PipelineState5Impl.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "PipelineState5Impl.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/PipelineState5Impl.mm"; sourceTree = "<group>"; };
+		9EE41AB4-34ED-4152-BB04-7A799FC42159 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/RenderTarget5Impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RenderTarget5Impl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/RenderTarget5Impl.h"; sourceTree = "<group>"; };
+		B2A72E16-0FBC-40FC-8A71-45F645F0EB52 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/RenderTarget5Impl.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "RenderTarget5Impl.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/RenderTarget5Impl.mm"; sourceTree = "<group>"; };
+		365D8469-927A-4192-A8E7-3BF6533B8B60 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Shader5Impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Shader5Impl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Shader5Impl.h"; sourceTree = "<group>"; };
+		ACB807D5-7377-4B7C-9223-E19FFAC95B8C /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Shader5Impl.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "Shader5Impl.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Shader5Impl.mm"; sourceTree = "<group>"; };
+		9918D198-2504-4E05-B53A-3F8797712049 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Texture5Impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Texture5Impl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Texture5Impl.h"; sourceTree = "<group>"; };
+		129293F3-FC97-4D79-9219-C41C9CC227E7 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Texture5Impl.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "Texture5Impl.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Texture5Impl.mm"; sourceTree = "<group>"; };
+		B15E6DFF-0386-4A39-8F65-66686722E814 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/VertexBuffer5Impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VertexBuffer5Impl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/VertexBuffer5Impl.h"; sourceTree = "<group>"; };
+		8319D6BB-4A40-43C8-BA9B-8E46128ADC78 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/VertexBuffer5Impl.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "VertexBuffer5Impl.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/VertexBuffer5Impl.mm"; sourceTree = "<group>"; };
+		28B17175-4D53-44AB-926A-0A9EB6AF4835 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/pch.h"; sourceTree = "<group>"; };
+		2D2ECCB4-F10F-4F4C-BD64-6973EC681127 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Http.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "Http.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Http.mm"; sourceTree = "<group>"; };
+		CEA9B113-29E3-4ACE-A24F-C24803037AB4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Thread.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "Thread.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Thread.mm"; sourceTree = "<group>"; };
+		D58BA89D-686C-4190-9528-7B60E442B70A /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Video.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Video.h"; sourceTree = "<group>"; };
+		A3F82E98-EBB3-4750-AF53-A0268EEFD55A /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Video.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "Video.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Video.mm"; sourceTree = "<group>"; };
+		3B8367F7-BFE8-420A-A7B5-CACBC1A9FFD2 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/VideoSoundStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VideoSoundStream.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/VideoSoundStream.h"; sourceTree = "<group>"; };
+		C90DF749-8355-4454-B406-63B65E91C466 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/pch.h"; sourceTree = "<group>"; };
+		1C2CD38A-941E-44EE-94DC-08C5874D4A94 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Event.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Event.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Event.cpp"; sourceTree = "<group>"; };
+		55F1C723-26D8-4F5E-963B-DCC4F67F662B /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/EventImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EventImpl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/EventImpl.h"; sourceTree = "<group>"; };
+		11EA7D29-F1FD-49B9-A31A-98D38228B279 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Mutex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Mutex.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Mutex.cpp"; sourceTree = "<group>"; };
+		63040F33-D35F-46EA-BEEE-93BB00FBCB6C /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/MutexImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MutexImpl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/MutexImpl.h"; sourceTree = "<group>"; };
+		0B87A6C1-E79E-4E33-9EFE-AD4C20F1C041 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Semaphore.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Semaphore.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Semaphore.cpp"; sourceTree = "<group>"; };
+		B459B7B7-BFB4-425D-9C2C-5C2EC709C04C /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/SemaphoreImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SemaphoreImpl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/SemaphoreImpl.h"; sourceTree = "<group>"; };
+		E306630A-F656-4949-BE2F-7C71BFBEC301 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Thread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Thread.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Thread.cpp"; sourceTree = "<group>"; };
+		03AE860E-7540-412D-BA03-5DBDD6D5EFB5 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/ThreadLocal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "ThreadLocal.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/ThreadLocal.cpp"; sourceTree = "<group>"; };
+		F3C68608-76FD-4CD9-849A-FDB8AF86E657 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/ThreadLocalImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ThreadLocalImpl.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/ThreadLocalImpl.h"; sourceTree = "<group>"; };
+		1C46876E-DCC4-4235-8822-C9C39895D041 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/pch.h"; sourceTree = "<group>"; };
+		D1C37C3D-1891-407C-9656-6EB89A340003 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Audio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Audio.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Audio.cpp"; sourceTree = "<group>"; };
+		9DB5E681-9CA0-4450-947D-8CE9FF1020A4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/BasicOpenGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BasicOpenGLView.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/BasicOpenGLView.h"; sourceTree = "<group>"; };
+		F3BDEBBE-7799-4BFE-81C2-0E75C54DE549 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/BasicOpenGLView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "BasicOpenGLView.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/BasicOpenGLView.mm"; sourceTree = "<group>"; };
+		2A53430A-FAF2-42C7-9396-AA6A53011A44 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Display.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "Display.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Display.mm"; sourceTree = "<group>"; };
+		A53CE2D2-4C2C-4C76-B160-CE6DF9D6C76E /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/DisplayData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DisplayData.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/DisplayData.h"; sourceTree = "<group>"; };
+		B82E98C5-8671-4485-9B35-12CBE6C575A4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/System.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "System.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/System.cpp"; sourceTree = "<group>"; };
+		E8345D93-2C43-4B9B-9080-E9AE74023EB9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/System.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "System.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/System.mm"; sourceTree = "<group>"; };
+		F5A90310-596B-429E-AB04-0A2262336758 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Window.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Window.cpp"; sourceTree = "<group>"; };
+		3B709211-6096-4119-8448-A5F6EDEA1F05 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/WindowData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WindowData.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/WindowData.h"; sourceTree = "<group>"; };
+		DCB64E14-9FFA-470D-8433-D9288E4F6588 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/mac.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "mac.plist"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/mac.plist"; sourceTree = "<group>"; };
+		1D216642-FD08-4C17-A7CC-B0654D5167B9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/pch.h"; sourceTree = "<group>"; };
+		294F8A2D-F1C4-4955-A1B1-500C3BC29BB7 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDGamepad.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "HIDGamepad.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDGamepad.cpp"; sourceTree = "<group>"; };
+		85B23587-37D3-4157-B7D7-958C3246A75D /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDGamepad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HIDGamepad.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDGamepad.h"; sourceTree = "<group>"; };
+		5EF811C0-04F7-420E-8468-495864EC95D4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "HIDManager.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDManager.cpp"; sourceTree = "<group>"; };
+		B478DADA-C7D2-4B85-A4D7-19AF720AF478 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HIDManager.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDManager.h"; sourceTree = "<group>"; };
+		2DCFC080-4398-4226-A781-998AA1AE61AA /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/Mouse.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objcpp; name = "Mouse.mm"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/Mouse.mm"; sourceTree = "<group>"; };
+		ACD9E3BE-A1F1-4139-8A12-DC5163038369 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/pch.h"; sourceTree = "<group>"; };
+		18A6FAC1-2312-4924-B25C-3244E3159D58 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Error.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "Error.c"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Error.c"; sourceTree = "<group>"; };
+		6B22CFC3-0191-405D-BA23-103450E8A787 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Error.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Error.h"; sourceTree = "<group>"; };
+		E1F28B70-F361-46AC-A7FC-B68385263694 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Log.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "Log.c"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Log.c"; sourceTree = "<group>"; };
+		F97551BA-032B-4191-87F0-DCAE9EA67E80 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Log.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Log.h"; sourceTree = "<group>"; };
+		721752A1-D7CA-4B00-AAAB-D26D96D580E6 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/pch.h"; sourceTree = "<group>"; };
+		AE8D6613-2BFE-4F78-8152-DA317BB9130B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/CodeStyle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "CodeStyle.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/CodeStyle.cpp"; sourceTree = "<group>"; };
+		80893544-1967-4525-90FC-EDB64479700C /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Display.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Display.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Display.h"; sourceTree = "<group>"; };
+		7B87F11D-62BE-420C-ADB3-51923EB57897 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Error.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Error.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Error.cpp"; sourceTree = "<group>"; };
+		C471D869-41CF-4221-8D88-75D1EAB2DD95 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Error.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Error.h"; sourceTree = "<group>"; };
+		5FBA56D1-F7BD-402D-8B9B-FAC2CF499BBE /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/ErrorArgs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ErrorArgs.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/ErrorArgs.h"; sourceTree = "<group>"; };
+		9570B24C-980E-4E98-98C0-14F53C02733E /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Log.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Log.cpp"; sourceTree = "<group>"; };
+		BD4C2053-5BEE-4EB3-94D9-AE2DA9D08773 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Log.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Log.h"; sourceTree = "<group>"; };
+		FB39AE62-6F11-4851-B7E2-FD804D42510A /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/LogArgs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LogArgs.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/LogArgs.h"; sourceTree = "<group>"; };
+		6D3AA8BC-3637-48F6-97BF-A93CCE4801CF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/System.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "System.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/System.cpp"; sourceTree = "<group>"; };
+		2B36F047-0D3F-4F51-AAC3-1531FBDC2EF8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/System.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "System.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/System.h"; sourceTree = "<group>"; };
+		6E229FE1-FC1C-4132-AD58-B6F8309BC66B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Window.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Window.h"; sourceTree = "<group>"; };
+		F7C1F672-DA97-4F12-BA40-7CEF77B0F7EA /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/pch.h"; sourceTree = "<group>"; };
+		B220E192-679F-43DF-B68D-41C0716D3A25 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Audio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Audio.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Audio.cpp"; sourceTree = "<group>"; };
+		17DCB15A-09FA-46D8-A5E0-0B8908449C1C /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Audio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Audio.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Audio.h"; sourceTree = "<group>"; };
+		B13DCF32-8BC5-427B-81B0-BF50EAFB76D8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Sound.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Sound.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Sound.cpp"; sourceTree = "<group>"; };
+		DB17C526-7B45-48BF-A5EC-413F36EFEDA4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Sound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Sound.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Sound.h"; sourceTree = "<group>"; };
+		DA4EC588-578F-4310-9677-A7C57DAB2ECE /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/SoundStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "SoundStream.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/SoundStream.cpp"; sourceTree = "<group>"; };
+		8DF41C5E-BE2E-47E0-9B2E-A3F8A7F38E9B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/SoundStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SoundStream.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/SoundStream.h"; sourceTree = "<group>"; };
+		06CF6368-294F-4D5F-9B02-0F306F587EAF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/pch.h"; sourceTree = "<group>"; };
+		82203D8B-CE91-4B97-8089-0171AE7A3458 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/stb_vorbis.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "stb_vorbis.c"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/stb_vorbis.c"; sourceTree = "<group>"; };
+		1C25ADAF-6449-44DF-9412-9F8258D1FC5A /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio2/Audio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Audio.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio2/Audio.cpp"; sourceTree = "<group>"; };
+		CD8B93C9-1056-42EC-A54C-3B81D481913E /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio2/Audio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Audio.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio2/Audio.h"; sourceTree = "<group>"; };
+		FBBB699D-A7A1-4A9F-9A47-369E07BD0C93 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio2/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio2/pch.h"; sourceTree = "<group>"; };
+		3EBEE10B-0D66-45E7-8D45-42E2CADABEBB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio3/Audio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Audio.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio3/Audio.cpp"; sourceTree = "<group>"; };
+		56CCB658-B68D-4AA5-B787-7FCC9A794864 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio3/Audio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Audio.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio3/Audio.h"; sourceTree = "<group>"; };
+		E73F840A-4915-4A9D-A617-1E801F7C6326 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio3/TextToSpeech.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TextToSpeech.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio3/TextToSpeech.h"; sourceTree = "<group>"; };
+		C7427D16-9353-47C8-AF31-77DCFDA3E1DA /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio3/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio3/pch.h"; sourceTree = "<group>"; };
+		C8F5D81F-4A4E-47E7-8C6A-7EA7647E9D76 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Compute/Compute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Compute.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Compute/Compute.h"; sourceTree = "<group>"; };
+		4F498B12-B51D-40EC-B032-7CB0EA83D456 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Color.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Color.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Color.cpp"; sourceTree = "<group>"; };
+		E181DA75-74AA-4392-8852-5CDD35BA4B2F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Color.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Color.h"; sourceTree = "<group>"; };
+		E2781C98-E24C-4876-91FE-8AB5DCD1E4D8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Graphics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Graphics.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Graphics.cpp"; sourceTree = "<group>"; };
+		86E781FC-ABC7-45E3-B131-CBA2D6A73AC9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Graphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Graphics.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Graphics.h"; sourceTree = "<group>"; };
+		451F231C-6062-4381-AA74-3E12578608BA /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Image.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Image.cpp"; sourceTree = "<group>"; };
+		C6F820F8-E003-4D4C-8E6D-D6E7267D0A91 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Image.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Image.h"; sourceTree = "<group>"; };
+		520B5B88-04CA-4B81-8FE7-2B027BA65942 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/pch.h"; sourceTree = "<group>"; };
+		D021C814-5E6E-4D6B-85FA-D28287DF4030 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "stb_image.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/stb_image.h"; sourceTree = "<group>"; };
+		F09F551D-0313-4991-8219-594F181318A6 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Graphics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Graphics.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Graphics.cpp"; sourceTree = "<group>"; };
+		477378D7-3D6B-40DF-8AFE-8AAC200466EB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Graphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Graphics.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Graphics.h"; sourceTree = "<group>"; };
+		D84597E5-37FF-4348-B0A6-F7311F8BAF84 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Kravur.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Kravur.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Kravur.cpp"; sourceTree = "<group>"; };
+		451BF1FC-E086-4CFA-BB8A-11F0DFF92651 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Kravur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Kravur.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Kravur.h"; sourceTree = "<group>"; };
+		AAD646F1-FBC7-48F9-AAAC-F3D319D66353 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/pch.h"; sourceTree = "<group>"; };
+		42F7ADB0-4477-4535-B19C-A8059DCD1E91 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Graphics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Graphics.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Graphics.cpp"; sourceTree = "<group>"; };
+		C53E6E20-573F-4376-847E-74DC643E3EE2 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Graphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Graphics.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Graphics.h"; sourceTree = "<group>"; };
+		D2F27023-3377-46A6-BCF0-7583B5564AA0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Light.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Light.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Light.h"; sourceTree = "<group>"; };
+		1BD1D231-7BED-4F86-8AE9-E0E03C46A572 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Texture.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Texture.cpp"; sourceTree = "<group>"; };
+		5BE6AF88-130D-4D99-AC4F-6362CF353650 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Texture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Texture.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Texture.h"; sourceTree = "<group>"; };
+		424FB2FE-CE06-4903-A4B1-815BEA20A9FC /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/pch.h"; sourceTree = "<group>"; };
+		9F132E00-518D-4CD0-8B3C-B77F41DEA48F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Graphics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Graphics.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Graphics.cpp"; sourceTree = "<group>"; };
+		6BF27F10-A636-4915-917B-E7B6F4B48450 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Graphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Graphics.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Graphics.h"; sourceTree = "<group>"; };
+		A8F1A445-E5D0-434A-969F-3CFF9F349692 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/PipelineState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "PipelineState.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/PipelineState.cpp"; sourceTree = "<group>"; };
+		6D16DB34-8C97-4B44-872E-75F24CD6DAAE /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/PipelineState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PipelineState.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/PipelineState.h"; sourceTree = "<group>"; };
+		9933F04D-49EA-4729-843A-CD7795383C29 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Shader.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Shader.h"; sourceTree = "<group>"; };
+		EA5A311D-B191-4569-8674-D030BEEA9392 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Texture.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Texture.cpp"; sourceTree = "<group>"; };
+		D5A4580F-C634-45BC-B992-92F5F3F4319B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Texture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Texture.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Texture.h"; sourceTree = "<group>"; };
+		E32729D0-B634-4A7D-883D-AA295F773DD9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/TextureArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "TextureArray.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/TextureArray.cpp"; sourceTree = "<group>"; };
+		FA158381-11A4-4FD8-AADE-DFBB0471FBB5 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/TextureArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TextureArray.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/TextureArray.h"; sourceTree = "<group>"; };
+		3C6AE469-2831-4B7F-B9A0-8C41117A0A87 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/VertexStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VertexStructure.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/VertexStructure.h"; sourceTree = "<group>"; };
+		3A21BF16-4240-438E-83F5-F2BC689929FB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/pch.h"; sourceTree = "<group>"; };
+		0E39D71C-6360-4F1C-B5AC-3E289C79EC61 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/CommandList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "CommandList.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/CommandList.cpp"; sourceTree = "<group>"; };
+		04C871C0-A7CF-48CD-BEA4-09994EF4682D /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/CommandList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CommandList.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/CommandList.h"; sourceTree = "<group>"; };
+		F0B80002-5D3C-4EC3-BC45-A7165662D20D /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/ConstantBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "ConstantBuffer.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/ConstantBuffer.cpp"; sourceTree = "<group>"; };
+		90BCDA5F-AE47-4C97-8F4D-48C7302C7A35 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/ConstantBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ConstantBuffer.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/ConstantBuffer.h"; sourceTree = "<group>"; };
+		69D4CF83-31BF-446D-A594-705B46FED401 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Graphics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Graphics.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Graphics.cpp"; sourceTree = "<group>"; };
+		AB07D82A-4A00-47DA-9C8E-0C4CC7F14851 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Graphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Graphics.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Graphics.h"; sourceTree = "<group>"; };
+		4F47DE61-C158-4017-BE37-55C06118704A /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/PipelineState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "PipelineState.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/PipelineState.cpp"; sourceTree = "<group>"; };
+		5B8E38E4-576F-4DEE-9DC3-A27D9F7E9C5C /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/PipelineState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PipelineState.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/PipelineState.h"; sourceTree = "<group>"; };
+		F4D77A4A-E10C-42FC-91AD-030E580E8A39 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/RayTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RayTrace.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/RayTrace.h"; sourceTree = "<group>"; };
+		703177F9-1D46-4A39-8B2F-E13DEC26C079 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Shader.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Shader.h"; sourceTree = "<group>"; };
+		9340633D-02A4-44F8-A72F-8DE3BAC87996 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Texture.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Texture.cpp"; sourceTree = "<group>"; };
+		D361C16D-515E-4048-8C95-7E45B821244F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Texture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Texture.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Texture.h"; sourceTree = "<group>"; };
+		D4FE55BD-4EB6-4B57-BF0C-F857AE5CFC57 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/VertexStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VertexStructure.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/VertexStructure.h"; sourceTree = "<group>"; };
+		7FD3E886-01B8-4D99-B078-BF3D8AF5E5B4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/pch.h"; sourceTree = "<group>"; };
+		F2E17F77-6232-443F-82B7-49246B5FB993 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/BufferReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "BufferReader.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/BufferReader.cpp"; sourceTree = "<group>"; };
+		D4501578-C7D0-4250-AD59-D2116128CC0B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/BufferReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BufferReader.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/BufferReader.h"; sourceTree = "<group>"; };
+		9E216157-7582-4978-8CD7-B35DDA331626 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FileReader.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileReader.h"; sourceTree = "<group>"; };
+		B54BB591-4AA9-4A9E-8629-48F294334B87 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileReader.winrt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "FileReader.winrt.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileReader.winrt.cpp"; sourceTree = "<group>"; };
+		8D5CD275-DF44-42EB-B770-6176AB7F7E84 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileWriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "FileWriter.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileWriter.cpp"; sourceTree = "<group>"; };
+		62B44EF9-3593-405A-ABAC-918D821EFCE8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FileWriter.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileWriter.h"; sourceTree = "<group>"; };
+		6A5C11B6-CA06-49F4-80F0-8BFD3AB4D15D /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Reader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Reader.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Reader.cpp"; sourceTree = "<group>"; };
+		629813B3-345D-4C12-B0C3-02BF4E7E47E4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Reader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Reader.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Reader.h"; sourceTree = "<group>"; };
+		875C5292-2F5B-433C-AEE0-D9E5D55CCE57 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Writer.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Writer.cpp"; sourceTree = "<group>"; };
+		930DD258-3762-4FA5-85F3-CC8FE20C038B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Writer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Writer.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Writer.h"; sourceTree = "<group>"; };
+		C694DF7C-A698-4C11-BC95-79464471663D /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/pch.h"; sourceTree = "<group>"; };
+		7F408427-2B7B-43FD-99AA-872588608898 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/LICENSE */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "LICENSE"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/LICENSE"; sourceTree = "<group>"; };
+		6DACF24D-E247-498F-92B5-99504C8A0B5B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "lz4.c"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4.c"; sourceTree = "<group>"; };
+		38373C9C-0B85-421C-895B-15EA2BD8CBCF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "lz4.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4.h"; sourceTree = "<group>"; };
+		6040008D-7CCD-4659-BD32-51F469C9FAA2 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4frame.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "lz4frame.c"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4frame.c"; sourceTree = "<group>"; };
+		ECC84148-0733-43CC-B4EA-3D0A0EFDA2BB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "lz4frame.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4frame.h"; sourceTree = "<group>"; };
+		C27532FC-0809-4661-BABB-A56157929816 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4frame_static.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "lz4frame_static.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4frame_static.h"; sourceTree = "<group>"; };
+		9555FA1B-FDDD-47EB-B1C4-A3E273EB72E3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4hc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "lz4hc.c"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4hc.c"; sourceTree = "<group>"; };
+		2A80F99B-BA7C-4129-B866-95181F0652D3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4hc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "lz4hc.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4hc.h"; sourceTree = "<group>"; };
+		8FCD22FD-AD3D-467A-AE69-4437DFCD4041 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4opt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "lz4opt.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4opt.h"; sourceTree = "<group>"; };
+		954601D0-B622-4A12-B24F-23B84CE61EDF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/xxhash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "xxhash.c"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/xxhash.c"; sourceTree = "<group>"; };
+		C5729FFA-F434-443B-8061-B82C1387554D /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/xxhash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "xxhash.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/xxhash.h"; sourceTree = "<group>"; };
+		EDDBA104-F7F4-469A-B82B-A18E7C9194F3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Gamepad.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Gamepad.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Gamepad.cpp"; sourceTree = "<group>"; };
+		347DDC67-34D0-40B2-8479-3B9442CED48F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Gamepad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Gamepad.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Gamepad.h"; sourceTree = "<group>"; };
+		66D25339-6794-4C9F-95C4-A61947F59149 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Keyboard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Keyboard.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Keyboard.cpp"; sourceTree = "<group>"; };
+		7DEA946B-5006-4132-ADBE-56A50BBDE9BD /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Keyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Keyboard.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Keyboard.h"; sourceTree = "<group>"; };
+		4809E27D-F7D8-4D47-816B-ED755A3BC9D0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Mouse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Mouse.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Mouse.cpp"; sourceTree = "<group>"; };
+		6661952D-DEAB-47DD-9877-426AD4D5E9C5 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Mouse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Mouse.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Mouse.h"; sourceTree = "<group>"; };
+		CEA12D8E-C3C5-4F2B-A44F-620070A3D956 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Pen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Pen.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Pen.cpp"; sourceTree = "<group>"; };
+		83185F03-7120-42A4-BB99-D0D095DF7CBC /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Pen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Pen.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Pen.h"; sourceTree = "<group>"; };
+		C7CF8A02-CEBB-49DD-B598-F1C346710F5E /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Sensor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Sensor.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Sensor.cpp"; sourceTree = "<group>"; };
+		B5200182-ED3C-434C-828D-E2886552D34B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Sensor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Sensor.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Sensor.h"; sourceTree = "<group>"; };
+		953E99E9-D631-4232-ACA8-71C9E37B91E3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Surface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Surface.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Surface.cpp"; sourceTree = "<group>"; };
+		08A4E1A5-0857-4F42-8E59-73021D5A5FEF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Surface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Surface.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Surface.h"; sourceTree = "<group>"; };
+		BCC8C3D1-9EEE-4AD0-B4AA-A670F1933DFB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/pch.h"; sourceTree = "<group>"; };
+		BCE53C26-6AEA-4BDA-B783-90A5492C74A4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Core.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Core.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Core.cpp"; sourceTree = "<group>"; };
+		2C33972C-C0F5-435D-B931-76378A7AF332 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Core.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Core.h"; sourceTree = "<group>"; };
+		975131E3-951F-4C67-8C1D-166CAE99D4AE /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Matrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Matrix.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Matrix.h"; sourceTree = "<group>"; };
+		1BC0D615-09EF-4214-B1A4-8C202A20EBA9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Quaternion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Quaternion.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Quaternion.cpp"; sourceTree = "<group>"; };
+		E82F5AB8-DE3A-4A22-9279-0451C03BFAB3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Quaternion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Quaternion.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Quaternion.h"; sourceTree = "<group>"; };
+		F30BFD30-7CF7-4F56-BE96-16768C61FDDF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Random.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Random.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Random.cpp"; sourceTree = "<group>"; };
+		96FE7B93-A2CA-4938-8A2E-A9E6B270D43F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Random.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Random.h"; sourceTree = "<group>"; };
+		16FCB598-E8C9-4420-9515-C196E1EEB7AA /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Vector.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Vector.h"; sourceTree = "<group>"; };
+		6333D2E7-DE47-479C-BC60-06A8E735ACA8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/pch.h"; sourceTree = "<group>"; };
+		C83E0C43-7FB4-4447-B4E6-1BAAB5768137 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Connection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Connection.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Connection.cpp"; sourceTree = "<group>"; };
+		BB4E98CF-74A4-4662-838C-59064770BC1E /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Connection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Connection.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Connection.h"; sourceTree = "<group>"; };
+		D6AB7562-A73C-493B-8F28-D917BD9B36CB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Http.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Http.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Http.cpp"; sourceTree = "<group>"; };
+		FFFB4DAB-6B6D-4329-86F1-13B0C1AB6AE0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Http.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Http.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Http.h"; sourceTree = "<group>"; };
+		312F7D62-D08D-4461-A6BE-CE89A6BB71DF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Socket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Socket.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Socket.cpp"; sourceTree = "<group>"; };
+		504442B3-A8F8-43AE-9068-ABF78F39E014 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Socket.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Socket.h"; sourceTree = "<group>"; };
+		B16707E4-A501-4CB2-BEB5-23304FA52E03 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/pch.h"; sourceTree = "<group>"; };
+		9746B845-21B7-45C2-AE42-173913A4DA1E /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Simd/float32x4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "float32x4.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Simd/float32x4.h"; sourceTree = "<group>"; };
+		689D2AF1-DBBD-40C9-95ED-93CA6A16D1D6 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Threads/Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Event.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Threads/Event.h"; sourceTree = "<group>"; };
+		F22A3B99-5564-476F-9BB8-0075D5F0F3D6 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Threads/Mutex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Mutex.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Threads/Mutex.h"; sourceTree = "<group>"; };
+		92A35581-D2B1-422D-A215-8818538C9C72 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Threads/Semaphore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Semaphore.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Threads/Semaphore.h"; sourceTree = "<group>"; };
+		09442C72-50E6-4826-9C65-64E175074794 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Threads/Thread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Thread.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Threads/Thread.h"; sourceTree = "<group>"; };
+		0C95DFE1-4666-4C4B-9E85-095B14C7A47B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Threads/ThreadLocal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ThreadLocal.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Threads/ThreadLocal.h"; sourceTree = "<group>"; };
+		C6F92BF6-14BF-48DD-800A-89BB1CB4E9ED /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/CameraImage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "CameraImage.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/CameraImage.cpp"; sourceTree = "<group>"; };
+		CB1B7D88-5259-423E-BEE0-0A876BEB123C /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/CameraImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CameraImage.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/CameraImage.h"; sourceTree = "<group>"; };
+		8FDB0E35-ECA6-4B44-81E4-B3E778B02651 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/SensorState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "SensorState.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/SensorState.cpp"; sourceTree = "<group>"; };
+		D22CCEBF-1C77-4EB6-AE01-8F573075DA33 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/SensorState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SensorState.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/SensorState.h"; sourceTree = "<group>"; };
+		6C9D5743-67F7-4687-9E7D-1F815C7285C9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VrInterface.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrInterface.h"; sourceTree = "<group>"; };
+		114EC0E1-3522-4AD3-B1A3-BC8DA097D923 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPose.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "VrPose.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPose.cpp"; sourceTree = "<group>"; };
+		655A49B3-4C0C-4AF2-A3A6-D2405CA2B673 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPose.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VrPose.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPose.h"; sourceTree = "<group>"; };
+		5366BE87-799D-4697-8C05-D0DB04CF211B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPoseState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "VrPoseState.cpp"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPoseState.cpp"; sourceTree = "<group>"; };
+		B34B9C06-4210-40F5-A21F-C821E08D3B31 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPoseState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VrPoseState.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPoseState.h"; sourceTree = "<group>"; };
+		6A6BA2CB-B2EA-4E2B-A55F-920561F178A0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pch.h"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/pch.h"; sourceTree = "<group>"; };
+		92F0FE97-EF2A-47C5-9B97-753946747E6C /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/g1.frag.glsl */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "g1.frag.glsl"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/g1.frag.glsl"; sourceTree = "<group>"; };
+		4E0083ED-856B-4D10-9573-A9962A91B932 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/g1.vert.glsl */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "g1.vert.glsl"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/g1.vert.glsl"; sourceTree = "<group>"; };
+		6D331070-9F8D-4563-9173-A5BCC659CB50 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-colored.frag.glsl */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "painter-colored.frag.glsl"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-colored.frag.glsl"; sourceTree = "<group>"; };
+		FFC8CFFE-EAFC-4E41-8D0B-EC44FDC948EF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-colored.vert.glsl */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "painter-colored.vert.glsl"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-colored.vert.glsl"; sourceTree = "<group>"; };
+		94BB0976-CDDE-4932-9D9F-CC4ECAB36D1A /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-image.frag.glsl */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "painter-image.frag.glsl"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-image.frag.glsl"; sourceTree = "<group>"; };
+		A439D08B-8E0E-4251-9397-5048BFCBAFC8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-image.vert.glsl */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "painter-image.vert.glsl"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-image.vert.glsl"; sourceTree = "<group>"; };
+		81C861B0-B684-44C1-8CF2-DA73850FD898 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-text.frag.glsl */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "painter-text.frag.glsl"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-text.frag.glsl"; sourceTree = "<group>"; };
+		C79F7D79-C03A-4E52-B3EE-46891F798B6A /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-text.vert.glsl */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "painter-text.vert.glsl"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-text.vert.glsl"; sourceTree = "<group>"; };
+		087E2FCE-ACE6-4739-9886-642CC0A538DE /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-video.frag.glsl */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "painter-video.frag.glsl"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-video.frag.glsl"; sourceTree = "<group>"; };
+		5046ABEB-1E87-405B-B590-92715A13A9C3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-video.vert.glsl */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "painter-video.vert.glsl"; path = "/Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-video.vert.glsl"; sourceTree = "<group>"; };
+		C75BE4D1-DFFC-4574-9886-80E28F6DE03E /* build/Sources/g1.frag.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = "g1.frag.metal"; path = "/Users/dbarber/Development/KoreMetalTest/build/Sources/g1.frag.metal"; sourceTree = "<group>"; };
+		CF55C34E-6D87-4DFA-AAE6-738585A6491F /* build/Sources/g1.vert.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = "g1.vert.metal"; path = "/Users/dbarber/Development/KoreMetalTest/build/Sources/g1.vert.metal"; sourceTree = "<group>"; };
+		9199D01A-F0BE-4E46-8443-19F2D98F1D63 /* build/Sources/painter-colored.frag.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = "painter-colored.frag.metal"; path = "/Users/dbarber/Development/KoreMetalTest/build/Sources/painter-colored.frag.metal"; sourceTree = "<group>"; };
+		732061F5-B502-45FE-A548-151BC4F68D96 /* build/Sources/painter-colored.vert.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = "painter-colored.vert.metal"; path = "/Users/dbarber/Development/KoreMetalTest/build/Sources/painter-colored.vert.metal"; sourceTree = "<group>"; };
+		764A46D3-8593-4717-BCCD-2CE81C2EEDC7 /* build/Sources/painter-image.frag.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = "painter-image.frag.metal"; path = "/Users/dbarber/Development/KoreMetalTest/build/Sources/painter-image.frag.metal"; sourceTree = "<group>"; };
+		F6C4D9D6-352B-4430-BB28-F9A5365B66A2 /* build/Sources/painter-image.vert.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = "painter-image.vert.metal"; path = "/Users/dbarber/Development/KoreMetalTest/build/Sources/painter-image.vert.metal"; sourceTree = "<group>"; };
+		610E974D-4A51-4D7E-9C26-126B7E1B72CC /* build/Sources/painter-text.frag.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = "painter-text.frag.metal"; path = "/Users/dbarber/Development/KoreMetalTest/build/Sources/painter-text.frag.metal"; sourceTree = "<group>"; };
+		098D53E3-4202-46F6-B560-26B7618D645F /* build/Sources/painter-text.vert.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = "painter-text.vert.metal"; path = "/Users/dbarber/Development/KoreMetalTest/build/Sources/painter-text.vert.metal"; sourceTree = "<group>"; };
+		1C2019AF-3848-4F98-810D-AF6479C97ED0 /* build/Sources/painter-video.frag.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = "painter-video.frag.metal"; path = "/Users/dbarber/Development/KoreMetalTest/build/Sources/painter-video.frag.metal"; sourceTree = "<group>"; };
+		4F6EA6C3-C49B-4C8C-BA8D-054E4E5A3170 /* build/Sources/painter-video.vert.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = "painter-video.vert.metal"; path = "/Users/dbarber/Development/KoreMetalTest/build/Sources/painter-video.vert.metal"; sourceTree = "<group>"; };
+		7580EE07-F6A3-444B-B984-799E6D30B101 /* build/Sources/shader.frag.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = "shader.frag.metal"; path = "/Users/dbarber/Development/KoreMetalTest/build/Sources/shader.frag.metal"; sourceTree = "<group>"; };
+		24C73AF6-4514-4725-969E-C4C881BF21FC /* build/Sources/shader.vert.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = "shader.vert.metal"; path = "/Users/dbarber/Development/KoreMetalTest/build/Sources/shader.vert.metal"; sourceTree = "<group>"; };
+		40664882-9468-4F52-BB47-48ED39EB77EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04167F36-CD97-4B02-8BC5-285368D391AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1C5DC4-6328-4DB9-BE84-F3BE2389D230 /* Metal.framework in Frameworks */,
+				42277836-632E-4517-8746-09DE2C90A983 /* MetalKit.framework in Frameworks */,
+				078384A1-6C64-47DF-8519-1D25245677E4 /* IOKit.framework in Frameworks */,
+				CB03AE3C-8B68-4920-B5EE-0FFA2D871802 /* Cocoa.framework in Frameworks */,
+				557DE26F-2231-4B7D-8C40-2C13B6EF8603 /* AppKit.framework in Frameworks */,
+				FF427294-81F1-439E-81E0-1B71DF0838B6 /* CoreAudio.framework in Frameworks */,
+				A1419377-EB56-4850-8D09-E2C38C37A3DF /* CoreData.framework in Frameworks */,
+				F539A536-D8E6-4618-94BD-DA8242B5C119 /* CoreMedia.framework in Frameworks */,
+				CFE7EB95-4CDF-426E-AC61-016D187B5E17 /* CoreVideo.framework in Frameworks */,
+				409D5982-71A6-4800-969E-C33CFC568484 /* AVFoundation.framework in Frameworks */,
+				E6D53FB0-FE71-45CB-B3C0-E628CED017BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C28DAB6F-C477-4F79-AF0C-FA4090C93972 = {
+			isa = PBXGroup;
+			children = (
+				40664882-9468-4F52-BB47-48ED39EB77EE /* Images.xcassets */,
+				28A30220-41EB-499F-A2E8-B28866E7679E /* Deployment */,
+				6F41BAA3-16FB-44D3-BC72-6592054AD7F2 /* ShaderTest */,
+				8BEB8D4F-64DB-41B6-A8B6-FE33AA036A87 /* Kore */,
+				61503FE3-1994-4004-98BD-79C5DDA2B52D /* Frameworks */,
+				B88EC9F0-140D-46EB-9A93-EBE70653DB16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B88EC9F0-140D-46EB-9A93-EBE70653DB16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00FB0BB6-EE4B-451C-A64E-0EB6AAB4023B /* ShaderTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61503FE3-1994-4004-98BD-79C5DDA2B52D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D2FBAF3-C56E-4EA7-8D3B-09B16D3BC684 /* Metal.framework */,
+				58AE6F21-1BA2-4203-84F8-D8E1AE37CB5C /* MetalKit.framework */,
+				F903FD3D-8BE1-4A05-AB4B-0E2AB184ECFC /* IOKit.framework */,
+				A6A06755-6346-4522-8441-EA3022125FC8 /* Cocoa.framework */,
+				336D33EE-2273-4D34-9415-D53AA41362CE /* AppKit.framework */,
+				F14DF3EA-A327-4EFE-9BC6-9BFF5D65377C /* CoreAudio.framework */,
+				77F14D94-9C4E-4178-BFE4-725DA09D553C /* CoreData.framework */,
+				5014FBA3-1869-462D-A94B-64DB74C7DBB1 /* CoreMedia.framework */,
+				50654CF0-ACCF-4FA6-A367-C59E0B90FBA9 /* CoreVideo.framework */,
+				6B01831A-6DA9-46B2-9860-0A8F5BDFCBD5 /* AVFoundation.framework */,
+				6AFD7B7B-2973-4378-A11D-EEADC1B82A20 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFEA873B-5C0E-4DEF-A48D-3A6895C7A1D7 /* ShaderTest/Sources */ = {
+			isa = PBXGroup;
+			children = (
+				062CD11A-4513-4271-BCA0-D37E85908462 /* ShaderTest/Sources/Shaders */,
+				AD5E0CE6-89DC-4881-AD4E-13F9B0FE431F /* Sources/KoreMetalTest.cpp */,
+				75C4762A-4ABB-49ED-99E4-D9B090B94DA9 /* Sources/pch.h */,
+			);
+			name = "Sources";
+			sourceTree = "<group>";
+		};
+		6F41BAA3-16FB-44D3-BC72-6592054AD7F2 /* ShaderTest */ = {
+			isa = PBXGroup;
+			children = (
+				FFEA873B-5C0E-4DEF-A48D-3A6895C7A1D7 /* ShaderTest/Sources */,
+				E63DC851-6DA3-4BDA-8FC8-347E51D3E02E /* ShaderTest/build */,
+			);
+			path = ../;
+			name = "ShaderTest";
+			sourceTree = "<group>";
+		};
+		062CD11A-4513-4271-BCA0-D37E85908462 /* ShaderTest/Sources/Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				32134D68-D182-4AAB-9621-5BF84633D3FC /* Sources/Shaders/shader.frag.glsl */,
+				6EAB7B81-09EA-4B50-B5D1-FFA0C39C8361 /* Sources/Shaders/shader.vert.glsl */,
+			);
+			name = "Shaders";
+			sourceTree = "<group>";
+		};
+		698CFC0E-8C5E-4E33-AB27-63303239EB41 /* Kore/Backends/Audio3/A3onA2/Sources/Kore */ = {
+			isa = PBXGroup;
+			children = (
+				F7E04BDD-AA40-440A-BCD4-13D8EDB8912A /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Audio3/A3onA2/Sources/Kore/Audio.cpp */,
+				09C65A8D-B5F3-47BB-918C-AE0E19B51449 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Audio3/A3onA2/Sources/Kore/TextToSpeech.winrt.cpp */,
+				982CE435-92F7-4BEB-B0E8-76E7C2FEC86F /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Audio3/A3onA2/Sources/Kore/pch.h */,
+			);
+			name = "Kore";
+			sourceTree = "<group>";
+		};
+		325965A0-6D86-43EC-B705-D1A57560665B /* Kore/Backends/Audio3/A3onA2/Sources */ = {
+			isa = PBXGroup;
+			children = (
+				698CFC0E-8C5E-4E33-AB27-63303239EB41 /* Kore/Backends/Audio3/A3onA2/Sources/Kore */,
+			);
+			name = "Sources";
+			sourceTree = "<group>";
+		};
+		2E0715B5-E92F-468B-B3CB-00C46A20FAD1 /* Kore/Backends/Audio3/A3onA2 */ = {
+			isa = PBXGroup;
+			children = (
+				325965A0-6D86-43EC-B705-D1A57560665B /* Kore/Backends/Audio3/A3onA2/Sources */,
+			);
+			name = "A3onA2";
+			sourceTree = "<group>";
+		};
+		6EADB61C-8666-40F0-9095-EA59CF848B9B /* Kore/Backends/Audio3 */ = {
+			isa = PBXGroup;
+			children = (
+				2E0715B5-E92F-468B-B3CB-00C46A20FAD1 /* Kore/Backends/Audio3/A3onA2 */,
+			);
+			name = "Audio3";
+			sourceTree = "<group>";
+		};
+		5C2458FE-B5FE-49C5-8EBF-C206E8F28286 /* Kore/Backends */ = {
+			isa = PBXGroup;
+			children = (
+				6EADB61C-8666-40F0-9095-EA59CF848B9B /* Kore/Backends/Audio3 */,
+				5F3963C9-21B7-43EF-8963-D78398ED4A66 /* Kore/Backends/Graphics4 */,
+				96F1C52D-8C3D-4ECF-ABAE-2A8A8DC44897 /* Kore/Backends/Graphics5 */,
+				38D42D89-F593-4B17-BC0C-4C34D6CEA8D1 /* Kore/Backends/System */,
+			);
+			name = "Backends";
+			sourceTree = "<group>";
+		};
+		8BEB8D4F-64DB-41B6-A8B6-FE33AA036A87 /* Kore */ = {
+			isa = PBXGroup;
+			children = (
+				5C2458FE-B5FE-49C5-8EBF-C206E8F28286 /* Kore/Backends */,
+				919509EF-9539-4DCC-9D11-0D1A21377C62 /* Kore/Sources */,
+			);
+			path = ../;
+			name = "Kore";
+			sourceTree = "<group>";
+		};
+		234FBF37-C8A5-44BF-A6F8-DF89FD51C880 /* Kore/Backends/Graphics4/G4onG5/Sources/Kore */ = {
+			isa = PBXGroup;
+			children = (
+				5DBB9F29-D82E-4467-BFC7-12FC200F2BBC /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/G4.cpp */,
+				51B3A818-9F55-43F8-8CCE-A87F4D2D5694 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/G4.h */,
+				60EE8E3A-5BDE-4281-B949-C940DD0A7A12 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/GraphicsImpl.h */,
+				00ADEF30-F30F-435D-A64D-5AC665B06273 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/IndexBufferImpl.cpp */,
+				1BF6F319-61AA-428B-825A-0200DEE5415B /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/IndexBufferImpl.h */,
+				B13952B6-3F2F-48C7-8BFE-91D7BDA8A3BC /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/PipelineStateImpl.cpp */,
+				9A21B8BC-2F99-42B9-8569-0002A584834B /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/PipelineStateImpl.h */,
+				414A465F-58DB-4614-B91E-07B71F97ABB0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/RenderTargetImpl.cpp */,
+				89510E33-A0B4-4EA2-8F17-C88D37AFAAB8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/RenderTargetImpl.h */,
+				5C59B115-96FF-4361-A089-A3386B9EB8CC /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/ShaderImpl.cpp */,
+				D01359DB-C0E7-42BC-B334-5964898E6A09 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/ShaderImpl.h */,
+				A1436C2D-7BD7-44E8-990C-B5014E96959A /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureArrayImpl.cpp */,
+				7D709E10-A4C4-49C6-A1D4-B84C01081A01 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureArrayImpl.h */,
+				28C8297B-FE32-406E-867C-1E67DEE0BD95 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureImpl.cpp */,
+				4E5C9138-D684-4881-A69C-B86009078CE0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/TextureImpl.h */,
+				22911DAB-D8FE-4BB7-A2A1-98E055583723 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/VertexBufferImpl.cpp */,
+				23281095-662F-4969-8482-7710E3A50E46 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/VertexBufferImpl.h */,
+				648F8E52-A1A8-4C65-A80F-B9F71A0D645E /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources/Kore/pch.h */,
+			);
+			name = "Kore";
+			sourceTree = "<group>";
+		};
+		0877FC8B-EEED-481B-8F84-C4223FE34555 /* Kore/Backends/Graphics4/G4onG5/Sources */ = {
+			isa = PBXGroup;
+			children = (
+				234FBF37-C8A5-44BF-A6F8-DF89FD51C880 /* Kore/Backends/Graphics4/G4onG5/Sources/Kore */,
+			);
+			name = "Sources";
+			sourceTree = "<group>";
+		};
+		14BB14AB-3F36-4712-9901-40A697BC17A9 /* Kore/Backends/Graphics4/G4onG5 */ = {
+			isa = PBXGroup;
+			children = (
+				0877FC8B-EEED-481B-8F84-C4223FE34555 /* Kore/Backends/Graphics4/G4onG5/Sources */,
+			);
+			name = "G4onG5";
+			sourceTree = "<group>";
+		};
+		5F3963C9-21B7-43EF-8963-D78398ED4A66 /* Kore/Backends/Graphics4 */ = {
+			isa = PBXGroup;
+			children = (
+				14BB14AB-3F36-4712-9901-40A697BC17A9 /* Kore/Backends/Graphics4/G4onG5 */,
+			);
+			name = "Graphics4";
+			sourceTree = "<group>";
+		};
+		6D368F1C-4174-4410-878E-32404AE83782 /* Kore/Backends/Graphics5/Metal/Sources/Kore */ = {
+			isa = PBXGroup;
+			children = (
+				77ECF58F-2E81-453A-9635-73B4DB6F9C91 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/CommandList5Impl.h */,
+				249AD4FC-8B78-4EA4-9CB1-436C449A8E5B /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/CommandList5Impl.mm */,
+				A93D7BF1-B8D1-409B-B8D3-E525818D048C /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ComputeImpl.h */,
+				BF861E48-446F-496A-A6F0-AF58ABF93075 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ComputeImpl.mm */,
+				0077A57B-2327-40E4-8915-09E449E67C7E /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ConstantBuffer5Impl.h */,
+				EE2214AA-B79A-4ECF-B6ED-1C7BC521711C /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/ConstantBuffer5Impl.mm */,
+				18C4AE72-02AB-4C9D-8798-59247F788EC8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Graphics5Impl.h */,
+				291B0A30-EF90-4D7B-8576-2ABF68CCA356 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/IndexBuffer5Impl.h */,
+				FDEEE392-F72B-4E0F-9A17-EC86243610F6 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/IndexBuffer5Impl.mm */,
+				62F2905D-03C2-4589-98C2-47C8FE31DB45 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Metal.h */,
+				08618A49-3475-4982-84F3-D9431E1EB6A7 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Metal.mm */,
+				7B20BEE4-53DC-40D0-BC25-E0776BBFDE2A /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/PipelineState5Impl.h */,
+				6A1B0B13-C308-4AF1-9A8B-4EF311A19278 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/PipelineState5Impl.mm */,
+				9EE41AB4-34ED-4152-BB04-7A799FC42159 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/RenderTarget5Impl.h */,
+				B2A72E16-0FBC-40FC-8A71-45F645F0EB52 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/RenderTarget5Impl.mm */,
+				365D8469-927A-4192-A8E7-3BF6533B8B60 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Shader5Impl.h */,
+				ACB807D5-7377-4B7C-9223-E19FFAC95B8C /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Shader5Impl.mm */,
+				9918D198-2504-4E05-B53A-3F8797712049 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Texture5Impl.h */,
+				129293F3-FC97-4D79-9219-C41C9CC227E7 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/Texture5Impl.mm */,
+				B15E6DFF-0386-4A39-8F65-66686722E814 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/VertexBuffer5Impl.h */,
+				8319D6BB-4A40-43C8-BA9B-8E46128ADC78 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/VertexBuffer5Impl.mm */,
+				28B17175-4D53-44AB-926A-0A9EB6AF4835 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources/Kore/pch.h */,
+			);
+			name = "Kore";
+			sourceTree = "<group>";
+		};
+		37786F00-0B36-4EF6-BBA4-0F5A03BA4754 /* Kore/Backends/Graphics5/Metal/Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6D368F1C-4174-4410-878E-32404AE83782 /* Kore/Backends/Graphics5/Metal/Sources/Kore */,
+			);
+			name = "Sources";
+			sourceTree = "<group>";
+		};
+		24741A33-6003-42EA-8D3A-4D3F68F5454E /* Kore/Backends/Graphics5/Metal */ = {
+			isa = PBXGroup;
+			children = (
+				37786F00-0B36-4EF6-BBA4-0F5A03BA4754 /* Kore/Backends/Graphics5/Metal/Sources */,
+			);
+			name = "Metal";
+			sourceTree = "<group>";
+		};
+		96F1C52D-8C3D-4ECF-ABAE-2A8A8DC44897 /* Kore/Backends/Graphics5 */ = {
+			isa = PBXGroup;
+			children = (
+				24741A33-6003-42EA-8D3A-4D3F68F5454E /* Kore/Backends/Graphics5/Metal */,
+			);
+			name = "Graphics5";
+			sourceTree = "<group>";
+		};
+		28DB3126-0E1E-46C2-9949-633648F2C7BA /* Kore/Backends/System/Apple/Sources/Kore */ = {
+			isa = PBXGroup;
+			children = (
+				2D2ECCB4-F10F-4F4C-BD64-6973EC681127 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Http.mm */,
+				CEA9B113-29E3-4ACE-A24F-C24803037AB4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Thread.mm */,
+				D58BA89D-686C-4190-9528-7B60E442B70A /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Video.h */,
+				A3F82E98-EBB3-4750-AF53-A0268EEFD55A /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/Video.mm */,
+				3B8367F7-BFE8-420A-A7B5-CACBC1A9FFD2 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/VideoSoundStream.h */,
+				C90DF749-8355-4454-B406-63B65E91C466 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources/Kore/pch.h */,
+			);
+			name = "Kore";
+			sourceTree = "<group>";
+		};
+		46237C25-7CA3-4D6A-99F7-6E383E5C757D /* Kore/Backends/System/Apple/Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28DB3126-0E1E-46C2-9949-633648F2C7BA /* Kore/Backends/System/Apple/Sources/Kore */,
+			);
+			name = "Sources";
+			sourceTree = "<group>";
+		};
+		8CCF9448-8600-4786-B7E0-94656641F5D2 /* Kore/Backends/System/Apple */ = {
+			isa = PBXGroup;
+			children = (
+				46237C25-7CA3-4D6A-99F7-6E383E5C757D /* Kore/Backends/System/Apple/Sources */,
+			);
+			name = "Apple";
+			sourceTree = "<group>";
+		};
+		38D42D89-F593-4B17-BC0C-4C34D6CEA8D1 /* Kore/Backends/System */ = {
+			isa = PBXGroup;
+			children = (
+				8CCF9448-8600-4786-B7E0-94656641F5D2 /* Kore/Backends/System/Apple */,
+				90B01C31-191C-474B-B359-911C5B554E1E /* Kore/Backends/System/POSIX */,
+				2DF65A39-0283-49A2-9DB9-3FF511B8B8D2 /* Kore/Backends/System/macOS */,
+			);
+			name = "System";
+			sourceTree = "<group>";
+		};
+		6F28DEE9-4F02-47CF-82D4-42E36BA91665 /* Kore/Backends/System/POSIX/Sources/Kore */ = {
+			isa = PBXGroup;
+			children = (
+				1C2CD38A-941E-44EE-94DC-08C5874D4A94 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Event.cpp */,
+				55F1C723-26D8-4F5E-963B-DCC4F67F662B /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/EventImpl.h */,
+				11EA7D29-F1FD-49B9-A31A-98D38228B279 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Mutex.cpp */,
+				63040F33-D35F-46EA-BEEE-93BB00FBCB6C /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/MutexImpl.h */,
+				0B87A6C1-E79E-4E33-9EFE-AD4C20F1C041 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Semaphore.cpp */,
+				B459B7B7-BFB4-425D-9C2C-5C2EC709C04C /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/SemaphoreImpl.h */,
+				E306630A-F656-4949-BE2F-7C71BFBEC301 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/Thread.cpp */,
+				03AE860E-7540-412D-BA03-5DBDD6D5EFB5 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/ThreadLocal.cpp */,
+				F3C68608-76FD-4CD9-849A-FDB8AF86E657 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/ThreadLocalImpl.h */,
+				1C46876E-DCC4-4235-8822-C9C39895D041 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources/Kore/pch.h */,
+			);
+			name = "Kore";
+			sourceTree = "<group>";
+		};
+		3569F8C1-B59F-4150-9AE4-509CAC19E549 /* Kore/Backends/System/POSIX/Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6F28DEE9-4F02-47CF-82D4-42E36BA91665 /* Kore/Backends/System/POSIX/Sources/Kore */,
+			);
+			name = "Sources";
+			sourceTree = "<group>";
+		};
+		90B01C31-191C-474B-B359-911C5B554E1E /* Kore/Backends/System/POSIX */ = {
+			isa = PBXGroup;
+			children = (
+				3569F8C1-B59F-4150-9AE4-509CAC19E549 /* Kore/Backends/System/POSIX/Sources */,
+			);
+			name = "POSIX";
+			sourceTree = "<group>";
+		};
+		97631660-8093-4304-B13A-5BD292A9232C /* Kore/Backends/System/macOS/Sources/Kore */ = {
+			isa = PBXGroup;
+			children = (
+				48C28F2D-1572-44D5-BACF-8F43562407C8 /* Kore/Backends/System/macOS/Sources/Kore/Input */,
+				D1C37C3D-1891-407C-9656-6EB89A340003 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Audio.cpp */,
+				9DB5E681-9CA0-4450-947D-8CE9FF1020A4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/BasicOpenGLView.h */,
+				F3BDEBBE-7799-4BFE-81C2-0E75C54DE549 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/BasicOpenGLView.mm */,
+				2A53430A-FAF2-42C7-9396-AA6A53011A44 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Display.mm */,
+				A53CE2D2-4C2C-4C76-B160-CE6DF9D6C76E /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/DisplayData.h */,
+				B82E98C5-8671-4485-9B35-12CBE6C575A4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/System.cpp */,
+				E8345D93-2C43-4B9B-9080-E9AE74023EB9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/System.mm */,
+				F5A90310-596B-429E-AB04-0A2262336758 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Window.cpp */,
+				3B709211-6096-4119-8448-A5F6EDEA1F05 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/WindowData.h */,
+				DCB64E14-9FFA-470D-8433-D9288E4F6588 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/mac.plist */,
+				1D216642-FD08-4C17-A7CC-B0654D5167B9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/pch.h */,
+			);
+			name = "Kore";
+			sourceTree = "<group>";
+		};
+		7EBE5C18-D08B-494D-9090-A38DCB427FD4 /* Kore/Backends/System/macOS/Sources */ = {
+			isa = PBXGroup;
+			children = (
+				97631660-8093-4304-B13A-5BD292A9232C /* Kore/Backends/System/macOS/Sources/Kore */,
+			);
+			name = "Sources";
+			sourceTree = "<group>";
+		};
+		2DF65A39-0283-49A2-9DB9-3FF511B8B8D2 /* Kore/Backends/System/macOS */ = {
+			isa = PBXGroup;
+			children = (
+				7EBE5C18-D08B-494D-9090-A38DCB427FD4 /* Kore/Backends/System/macOS/Sources */,
+			);
+			name = "macOS";
+			sourceTree = "<group>";
+		};
+		48C28F2D-1572-44D5-BACF-8F43562407C8 /* Kore/Backends/System/macOS/Sources/Kore/Input */ = {
+			isa = PBXGroup;
+			children = (
+				294F8A2D-F1C4-4955-A1B1-500C3BC29BB7 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDGamepad.cpp */,
+				85B23587-37D3-4157-B7D7-958C3246A75D /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDGamepad.h */,
+				5EF811C0-04F7-420E-8468-495864EC95D4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDManager.cpp */,
+				B478DADA-C7D2-4B85-A4D7-19AF720AF478 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/HIDManager.h */,
+				2DCFC080-4398-4226-A781-998AA1AE61AA /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/Mouse.mm */,
+				ACD9E3BE-A1F1-4139-8A12-DC5163038369 /* /Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/Input/pch.h */,
+			);
+			name = "Input";
+			sourceTree = "<group>";
+		};
+		05A7E4A0-D0A3-4C0C-8D90-C0155A91743E /* Kore/Sources/C/Kore */ = {
+			isa = PBXGroup;
+			children = (
+				18A6FAC1-2312-4924-B25C-3244E3159D58 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Error.c */,
+				6B22CFC3-0191-405D-BA23-103450E8A787 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Error.h */,
+				E1F28B70-F361-46AC-A7FC-B68385263694 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Log.c */,
+				F97551BA-032B-4191-87F0-DCAE9EA67E80 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/Log.h */,
+				721752A1-D7CA-4B00-AAAB-D26D96D580E6 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/C/Kore/pch.h */,
+			);
+			name = "Kore";
+			sourceTree = "<group>";
+		};
+		F419CDFD-6AEA-42BD-A85D-174364584DE8 /* Kore/Sources/C */ = {
+			isa = PBXGroup;
+			children = (
+				05A7E4A0-D0A3-4C0C-8D90-C0155A91743E /* Kore/Sources/C/Kore */,
+			);
+			name = "C";
+			sourceTree = "<group>";
+		};
+		919509EF-9539-4DCC-9D11-0D1A21377C62 /* Kore/Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F419CDFD-6AEA-42BD-A85D-174364584DE8 /* Kore/Sources/C */,
+				44531905-2DAD-4C3F-A49B-97A6B0D4EFBF /* Kore/Sources/Kore */,
+				02C96667-A01C-4741-8C51-8C19FF18DDAC /* Kore/Sources/Shaders */,
+			);
+			name = "Sources";
+			sourceTree = "<group>";
+		};
+		44531905-2DAD-4C3F-A49B-97A6B0D4EFBF /* Kore/Sources/Kore */ = {
+			isa = PBXGroup;
+			children = (
+				ABF949E6-10D8-4F8F-BE35-670B30634932 /* Kore/Sources/Kore/Audio1 */,
+				EE8347F1-BE61-4DF7-975B-8DDEE626051F /* Kore/Sources/Kore/Audio2 */,
+				BF46F447-1A5D-437A-9406-9179CCD0AF69 /* Kore/Sources/Kore/Audio3 */,
+				50D7525C-2905-41B6-A168-36FDF0B9D71E /* Kore/Sources/Kore/Compute */,
+				59C0DA71-0631-49B1-9162-FD41767AF620 /* Kore/Sources/Kore/Graphics1 */,
+				42E48618-E510-403C-A9AD-5B13ABDAA26F /* Kore/Sources/Kore/Graphics2 */,
+				D1BFC0FD-3F43-4FA4-B2B5-3DC36C3B32A3 /* Kore/Sources/Kore/Graphics3 */,
+				38FAF815-4F0F-4D1E-8C6B-FF0AE4772E82 /* Kore/Sources/Kore/Graphics4 */,
+				AAB58C2A-D877-43E9-A4DC-4C481964C722 /* Kore/Sources/Kore/Graphics5 */,
+				B1D88961-8544-45C2-AE8E-A423EF5C8D20 /* Kore/Sources/Kore/IO */,
+				60F551FA-6B78-4E4B-929D-511CCA45AF55 /* Kore/Sources/Kore/Input */,
+				358D0537-8D88-4ED6-A3DF-626236B1F581 /* Kore/Sources/Kore/Math */,
+				C456EBFA-10A6-46E1-B1ED-E02A682BB13D /* Kore/Sources/Kore/Network */,
+				82B86671-DF0B-4480-B5FC-7233B6EDBA48 /* Kore/Sources/Kore/Simd */,
+				7E08EA3E-5754-4E70-8F97-629C1126D802 /* Kore/Sources/Kore/Threads */,
+				5A8A25ED-5C6F-45E4-8B22-7215FD5B1D40 /* Kore/Sources/Kore/Vr */,
+				AE8D6613-2BFE-4F78-8152-DA317BB9130B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/CodeStyle.cpp */,
+				80893544-1967-4525-90FC-EDB64479700C /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Display.h */,
+				7B87F11D-62BE-420C-ADB3-51923EB57897 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Error.cpp */,
+				C471D869-41CF-4221-8D88-75D1EAB2DD95 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Error.h */,
+				5FBA56D1-F7BD-402D-8B9B-FAC2CF499BBE /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/ErrorArgs.h */,
+				9570B24C-980E-4E98-98C0-14F53C02733E /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Log.cpp */,
+				BD4C2053-5BEE-4EB3-94D9-AE2DA9D08773 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Log.h */,
+				FB39AE62-6F11-4851-B7E2-FD804D42510A /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/LogArgs.h */,
+				6D3AA8BC-3637-48F6-97BF-A93CCE4801CF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/System.cpp */,
+				2B36F047-0D3F-4F51-AAC3-1531FBDC2EF8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/System.h */,
+				6E229FE1-FC1C-4132-AD58-B6F8309BC66B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Window.h */,
+				F7C1F672-DA97-4F12-BA40-7CEF77B0F7EA /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/pch.h */,
+			);
+			name = "Kore";
+			sourceTree = "<group>";
+		};
+		ABF949E6-10D8-4F8F-BE35-670B30634932 /* Kore/Sources/Kore/Audio1 */ = {
+			isa = PBXGroup;
+			children = (
+				B220E192-679F-43DF-B68D-41C0716D3A25 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Audio.cpp */,
+				17DCB15A-09FA-46D8-A5E0-0B8908449C1C /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Audio.h */,
+				B13DCF32-8BC5-427B-81B0-BF50EAFB76D8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Sound.cpp */,
+				DB17C526-7B45-48BF-A5EC-413F36EFEDA4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/Sound.h */,
+				DA4EC588-578F-4310-9677-A7C57DAB2ECE /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/SoundStream.cpp */,
+				8DF41C5E-BE2E-47E0-9B2E-A3F8A7F38E9B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/SoundStream.h */,
+				06CF6368-294F-4D5F-9B02-0F306F587EAF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/pch.h */,
+				82203D8B-CE91-4B97-8089-0171AE7A3458 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio1/stb_vorbis.c */,
+			);
+			name = "Audio1";
+			sourceTree = "<group>";
+		};
+		EE8347F1-BE61-4DF7-975B-8DDEE626051F /* Kore/Sources/Kore/Audio2 */ = {
+			isa = PBXGroup;
+			children = (
+				1C25ADAF-6449-44DF-9412-9F8258D1FC5A /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio2/Audio.cpp */,
+				CD8B93C9-1056-42EC-A54C-3B81D481913E /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio2/Audio.h */,
+				FBBB699D-A7A1-4A9F-9A47-369E07BD0C93 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio2/pch.h */,
+			);
+			name = "Audio2";
+			sourceTree = "<group>";
+		};
+		BF46F447-1A5D-437A-9406-9179CCD0AF69 /* Kore/Sources/Kore/Audio3 */ = {
+			isa = PBXGroup;
+			children = (
+				3EBEE10B-0D66-45E7-8D45-42E2CADABEBB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio3/Audio.cpp */,
+				56CCB658-B68D-4AA5-B787-7FCC9A794864 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio3/Audio.h */,
+				E73F840A-4915-4A9D-A617-1E801F7C6326 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio3/TextToSpeech.h */,
+				C7427D16-9353-47C8-AF31-77DCFDA3E1DA /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Audio3/pch.h */,
+			);
+			name = "Audio3";
+			sourceTree = "<group>";
+		};
+		50D7525C-2905-41B6-A168-36FDF0B9D71E /* Kore/Sources/Kore/Compute */ = {
+			isa = PBXGroup;
+			children = (
+				C8F5D81F-4A4E-47E7-8C6A-7EA7647E9D76 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Compute/Compute.h */,
+			);
+			name = "Compute";
+			sourceTree = "<group>";
+		};
+		59C0DA71-0631-49B1-9162-FD41767AF620 /* Kore/Sources/Kore/Graphics1 */ = {
+			isa = PBXGroup;
+			children = (
+				4F498B12-B51D-40EC-B032-7CB0EA83D456 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Color.cpp */,
+				E181DA75-74AA-4392-8852-5CDD35BA4B2F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Color.h */,
+				E2781C98-E24C-4876-91FE-8AB5DCD1E4D8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Graphics.cpp */,
+				86E781FC-ABC7-45E3-B131-CBA2D6A73AC9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Graphics.h */,
+				451F231C-6062-4381-AA74-3E12578608BA /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Image.cpp */,
+				C6F820F8-E003-4D4C-8E6D-D6E7267D0A91 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/Image.h */,
+				520B5B88-04CA-4B81-8FE7-2B027BA65942 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/pch.h */,
+				D021C814-5E6E-4D6B-85FA-D28287DF4030 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics1/stb_image.h */,
+			);
+			name = "Graphics1";
+			sourceTree = "<group>";
+		};
+		42E48618-E510-403C-A9AD-5B13ABDAA26F /* Kore/Sources/Kore/Graphics2 */ = {
+			isa = PBXGroup;
+			children = (
+				F09F551D-0313-4991-8219-594F181318A6 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Graphics.cpp */,
+				477378D7-3D6B-40DF-8AFE-8AAC200466EB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Graphics.h */,
+				D84597E5-37FF-4348-B0A6-F7311F8BAF84 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Kravur.cpp */,
+				451BF1FC-E086-4CFA-BB8A-11F0DFF92651 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/Kravur.h */,
+				AAD646F1-FBC7-48F9-AAAC-F3D319D66353 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics2/pch.h */,
+			);
+			name = "Graphics2";
+			sourceTree = "<group>";
+		};
+		D1BFC0FD-3F43-4FA4-B2B5-3DC36C3B32A3 /* Kore/Sources/Kore/Graphics3 */ = {
+			isa = PBXGroup;
+			children = (
+				42F7ADB0-4477-4535-B19C-A8059DCD1E91 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Graphics.cpp */,
+				C53E6E20-573F-4376-847E-74DC643E3EE2 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Graphics.h */,
+				D2F27023-3377-46A6-BCF0-7583B5564AA0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Light.h */,
+				1BD1D231-7BED-4F86-8AE9-E0E03C46A572 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Texture.cpp */,
+				5BE6AF88-130D-4D99-AC4F-6362CF353650 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/Texture.h */,
+				424FB2FE-CE06-4903-A4B1-815BEA20A9FC /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics3/pch.h */,
+			);
+			name = "Graphics3";
+			sourceTree = "<group>";
+		};
+		38FAF815-4F0F-4D1E-8C6B-FF0AE4772E82 /* Kore/Sources/Kore/Graphics4 */ = {
+			isa = PBXGroup;
+			children = (
+				9F132E00-518D-4CD0-8B3C-B77F41DEA48F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Graphics.cpp */,
+				6BF27F10-A636-4915-917B-E7B6F4B48450 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Graphics.h */,
+				A8F1A445-E5D0-434A-969F-3CFF9F349692 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/PipelineState.cpp */,
+				6D16DB34-8C97-4B44-872E-75F24CD6DAAE /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/PipelineState.h */,
+				9933F04D-49EA-4729-843A-CD7795383C29 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Shader.h */,
+				EA5A311D-B191-4569-8674-D030BEEA9392 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Texture.cpp */,
+				D5A4580F-C634-45BC-B992-92F5F3F4319B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/Texture.h */,
+				E32729D0-B634-4A7D-883D-AA295F773DD9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/TextureArray.cpp */,
+				FA158381-11A4-4FD8-AADE-DFBB0471FBB5 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/TextureArray.h */,
+				3C6AE469-2831-4B7F-B9A0-8C41117A0A87 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/VertexStructure.h */,
+				3A21BF16-4240-438E-83F5-F2BC689929FB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics4/pch.h */,
+			);
+			name = "Graphics4";
+			sourceTree = "<group>";
+		};
+		AAB58C2A-D877-43E9-A4DC-4C481964C722 /* Kore/Sources/Kore/Graphics5 */ = {
+			isa = PBXGroup;
+			children = (
+				0E39D71C-6360-4F1C-B5AC-3E289C79EC61 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/CommandList.cpp */,
+				04C871C0-A7CF-48CD-BEA4-09994EF4682D /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/CommandList.h */,
+				F0B80002-5D3C-4EC3-BC45-A7165662D20D /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/ConstantBuffer.cpp */,
+				90BCDA5F-AE47-4C97-8F4D-48C7302C7A35 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/ConstantBuffer.h */,
+				69D4CF83-31BF-446D-A594-705B46FED401 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Graphics.cpp */,
+				AB07D82A-4A00-47DA-9C8E-0C4CC7F14851 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Graphics.h */,
+				4F47DE61-C158-4017-BE37-55C06118704A /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/PipelineState.cpp */,
+				5B8E38E4-576F-4DEE-9DC3-A27D9F7E9C5C /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/PipelineState.h */,
+				F4D77A4A-E10C-42FC-91AD-030E580E8A39 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/RayTrace.h */,
+				703177F9-1D46-4A39-8B2F-E13DEC26C079 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Shader.h */,
+				9340633D-02A4-44F8-A72F-8DE3BAC87996 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Texture.cpp */,
+				D361C16D-515E-4048-8C95-7E45B821244F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/Texture.h */,
+				D4FE55BD-4EB6-4B57-BF0C-F857AE5CFC57 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/VertexStructure.h */,
+				7FD3E886-01B8-4D99-B078-BF3D8AF5E5B4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Graphics5/pch.h */,
+			);
+			name = "Graphics5";
+			sourceTree = "<group>";
+		};
+		B1D88961-8544-45C2-AE8E-A423EF5C8D20 /* Kore/Sources/Kore/IO */ = {
+			isa = PBXGroup;
+			children = (
+				ECBE8596-BE5C-4712-9FA5-BC4B89E8A3DA /* Kore/Sources/Kore/IO/lz4 */,
+				F2E17F77-6232-443F-82B7-49246B5FB993 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/BufferReader.cpp */,
+				D4501578-C7D0-4250-AD59-D2116128CC0B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/BufferReader.h */,
+				9E216157-7582-4978-8CD7-B35DDA331626 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileReader.h */,
+				B54BB591-4AA9-4A9E-8629-48F294334B87 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileReader.winrt.cpp */,
+				8D5CD275-DF44-42EB-B770-6176AB7F7E84 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileWriter.cpp */,
+				62B44EF9-3593-405A-ABAC-918D821EFCE8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/FileWriter.h */,
+				6A5C11B6-CA06-49F4-80F0-8BFD3AB4D15D /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Reader.cpp */,
+				629813B3-345D-4C12-B0C3-02BF4E7E47E4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Reader.h */,
+				875C5292-2F5B-433C-AEE0-D9E5D55CCE57 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Writer.cpp */,
+				930DD258-3762-4FA5-85F3-CC8FE20C038B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/Writer.h */,
+				C694DF7C-A698-4C11-BC95-79464471663D /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/pch.h */,
+			);
+			name = "IO";
+			sourceTree = "<group>";
+		};
+		ECBE8596-BE5C-4712-9FA5-BC4B89E8A3DA /* Kore/Sources/Kore/IO/lz4 */ = {
+			isa = PBXGroup;
+			children = (
+				7F408427-2B7B-43FD-99AA-872588608898 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/LICENSE */,
+				6DACF24D-E247-498F-92B5-99504C8A0B5B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4.c */,
+				38373C9C-0B85-421C-895B-15EA2BD8CBCF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4.h */,
+				6040008D-7CCD-4659-BD32-51F469C9FAA2 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4frame.c */,
+				ECC84148-0733-43CC-B4EA-3D0A0EFDA2BB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4frame.h */,
+				C27532FC-0809-4661-BABB-A56157929816 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4frame_static.h */,
+				9555FA1B-FDDD-47EB-B1C4-A3E273EB72E3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4hc.c */,
+				2A80F99B-BA7C-4129-B866-95181F0652D3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4hc.h */,
+				8FCD22FD-AD3D-467A-AE69-4437DFCD4041 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/lz4opt.h */,
+				954601D0-B622-4A12-B24F-23B84CE61EDF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/xxhash.c */,
+				C5729FFA-F434-443B-8061-B82C1387554D /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/IO/lz4/xxhash.h */,
+			);
+			name = "lz4";
+			sourceTree = "<group>";
+		};
+		60F551FA-6B78-4E4B-929D-511CCA45AF55 /* Kore/Sources/Kore/Input */ = {
+			isa = PBXGroup;
+			children = (
+				EDDBA104-F7F4-469A-B82B-A18E7C9194F3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Gamepad.cpp */,
+				347DDC67-34D0-40B2-8479-3B9442CED48F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Gamepad.h */,
+				66D25339-6794-4C9F-95C4-A61947F59149 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Keyboard.cpp */,
+				7DEA946B-5006-4132-ADBE-56A50BBDE9BD /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Keyboard.h */,
+				4809E27D-F7D8-4D47-816B-ED755A3BC9D0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Mouse.cpp */,
+				6661952D-DEAB-47DD-9877-426AD4D5E9C5 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Mouse.h */,
+				CEA12D8E-C3C5-4F2B-A44F-620070A3D956 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Pen.cpp */,
+				83185F03-7120-42A4-BB99-D0D095DF7CBC /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Pen.h */,
+				C7CF8A02-CEBB-49DD-B598-F1C346710F5E /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Sensor.cpp */,
+				B5200182-ED3C-434C-828D-E2886552D34B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Sensor.h */,
+				953E99E9-D631-4232-ACA8-71C9E37B91E3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Surface.cpp */,
+				08A4E1A5-0857-4F42-8E59-73021D5A5FEF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/Surface.h */,
+				BCC8C3D1-9EEE-4AD0-B4AA-A670F1933DFB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Input/pch.h */,
+			);
+			name = "Input";
+			sourceTree = "<group>";
+		};
+		358D0537-8D88-4ED6-A3DF-626236B1F581 /* Kore/Sources/Kore/Math */ = {
+			isa = PBXGroup;
+			children = (
+				BCE53C26-6AEA-4BDA-B783-90A5492C74A4 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Core.cpp */,
+				2C33972C-C0F5-435D-B931-76378A7AF332 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Core.h */,
+				975131E3-951F-4C67-8C1D-166CAE99D4AE /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Matrix.h */,
+				1BC0D615-09EF-4214-B1A4-8C202A20EBA9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Quaternion.cpp */,
+				E82F5AB8-DE3A-4A22-9279-0451C03BFAB3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Quaternion.h */,
+				F30BFD30-7CF7-4F56-BE96-16768C61FDDF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Random.cpp */,
+				96FE7B93-A2CA-4938-8A2E-A9E6B270D43F /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Random.h */,
+				16FCB598-E8C9-4420-9515-C196E1EEB7AA /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/Vector.h */,
+				6333D2E7-DE47-479C-BC60-06A8E735ACA8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Math/pch.h */,
+			);
+			name = "Math";
+			sourceTree = "<group>";
+		};
+		C456EBFA-10A6-46E1-B1ED-E02A682BB13D /* Kore/Sources/Kore/Network */ = {
+			isa = PBXGroup;
+			children = (
+				C83E0C43-7FB4-4447-B4E6-1BAAB5768137 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Connection.cpp */,
+				BB4E98CF-74A4-4662-838C-59064770BC1E /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Connection.h */,
+				D6AB7562-A73C-493B-8F28-D917BD9B36CB /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Http.cpp */,
+				FFFB4DAB-6B6D-4329-86F1-13B0C1AB6AE0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Http.h */,
+				312F7D62-D08D-4461-A6BE-CE89A6BB71DF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Socket.cpp */,
+				504442B3-A8F8-43AE-9068-ABF78F39E014 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/Socket.h */,
+				B16707E4-A501-4CB2-BEB5-23304FA52E03 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Network/pch.h */,
+			);
+			name = "Network";
+			sourceTree = "<group>";
+		};
+		82B86671-DF0B-4480-B5FC-7233B6EDBA48 /* Kore/Sources/Kore/Simd */ = {
+			isa = PBXGroup;
+			children = (
+				9746B845-21B7-45C2-AE42-173913A4DA1E /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Simd/float32x4.h */,
+			);
+			name = "Simd";
+			sourceTree = "<group>";
+		};
+		7E08EA3E-5754-4E70-8F97-629C1126D802 /* Kore/Sources/Kore/Threads */ = {
+			isa = PBXGroup;
+			children = (
+				689D2AF1-DBBD-40C9-95ED-93CA6A16D1D6 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Threads/Event.h */,
+				F22A3B99-5564-476F-9BB8-0075D5F0F3D6 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Threads/Mutex.h */,
+				92A35581-D2B1-422D-A215-8818538C9C72 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Threads/Semaphore.h */,
+				09442C72-50E6-4826-9C65-64E175074794 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Threads/Thread.h */,
+				0C95DFE1-4666-4C4B-9E85-095B14C7A47B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Threads/ThreadLocal.h */,
+			);
+			name = "Threads";
+			sourceTree = "<group>";
+		};
+		5A8A25ED-5C6F-45E4-8B22-7215FD5B1D40 /* Kore/Sources/Kore/Vr */ = {
+			isa = PBXGroup;
+			children = (
+				C6F92BF6-14BF-48DD-800A-89BB1CB4E9ED /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/CameraImage.cpp */,
+				CB1B7D88-5259-423E-BEE0-0A876BEB123C /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/CameraImage.h */,
+				8FDB0E35-ECA6-4B44-81E4-B3E778B02651 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/SensorState.cpp */,
+				D22CCEBF-1C77-4EB6-AE01-8F573075DA33 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/SensorState.h */,
+				6C9D5743-67F7-4687-9E7D-1F815C7285C9 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrInterface.h */,
+				114EC0E1-3522-4AD3-B1A3-BC8DA097D923 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPose.cpp */,
+				655A49B3-4C0C-4AF2-A3A6-D2405CA2B673 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPose.h */,
+				5366BE87-799D-4697-8C05-D0DB04CF211B /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPoseState.cpp */,
+				B34B9C06-4210-40F5-A21F-C821E08D3B31 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/VrPoseState.h */,
+				6A6BA2CB-B2EA-4E2B-A55F-920561F178A0 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Kore/Vr/pch.h */,
+			);
+			name = "Vr";
+			sourceTree = "<group>";
+		};
+		02C96667-A01C-4741-8C51-8C19FF18DDAC /* Kore/Sources/Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				92F0FE97-EF2A-47C5-9B97-753946747E6C /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/g1.frag.glsl */,
+				4E0083ED-856B-4D10-9573-A9962A91B932 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/g1.vert.glsl */,
+				6D331070-9F8D-4563-9173-A5BCC659CB50 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-colored.frag.glsl */,
+				FFC8CFFE-EAFC-4E41-8D0B-EC44FDC948EF /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-colored.vert.glsl */,
+				94BB0976-CDDE-4932-9D9F-CC4ECAB36D1A /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-image.frag.glsl */,
+				A439D08B-8E0E-4251-9397-5048BFCBAFC8 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-image.vert.glsl */,
+				81C861B0-B684-44C1-8CF2-DA73850FD898 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-text.frag.glsl */,
+				C79F7D79-C03A-4E52-B3EE-46891F798B6A /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-text.vert.glsl */,
+				087E2FCE-ACE6-4739-9886-642CC0A538DE /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-video.frag.glsl */,
+				5046ABEB-1E87-405B-B590-92715A13A9C3 /* /Users/dbarber/Development/KoreMetalTest/Kore/Sources/Shaders/painter-video.vert.glsl */,
+			);
+			name = "Shaders";
+			sourceTree = "<group>";
+		};
+		E25FDE37-7EB4-4B7D-B81A-E3DAD2298357 /* ShaderTest/build/Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C75BE4D1-DFFC-4574-9886-80E28F6DE03E /* build/Sources/g1.frag.metal */,
+				CF55C34E-6D87-4DFA-AAE6-738585A6491F /* build/Sources/g1.vert.metal */,
+				9199D01A-F0BE-4E46-8443-19F2D98F1D63 /* build/Sources/painter-colored.frag.metal */,
+				732061F5-B502-45FE-A548-151BC4F68D96 /* build/Sources/painter-colored.vert.metal */,
+				764A46D3-8593-4717-BCCD-2CE81C2EEDC7 /* build/Sources/painter-image.frag.metal */,
+				F6C4D9D6-352B-4430-BB28-F9A5365B66A2 /* build/Sources/painter-image.vert.metal */,
+				610E974D-4A51-4D7E-9C26-126B7E1B72CC /* build/Sources/painter-text.frag.metal */,
+				098D53E3-4202-46F6-B560-26B7618D645F /* build/Sources/painter-text.vert.metal */,
+				1C2019AF-3848-4F98-810D-AF6479C97ED0 /* build/Sources/painter-video.frag.metal */,
+				4F6EA6C3-C49B-4C8C-BA8D-054E4E5A3170 /* build/Sources/painter-video.vert.metal */,
+				7580EE07-F6A3-444B-B984-799E6D30B101 /* build/Sources/shader.frag.metal */,
+				24C73AF6-4514-4725-969E-C4C881BF21FC /* build/Sources/shader.vert.metal */,
+			);
+			name = "Sources";
+			sourceTree = "<group>";
+		};
+		E63DC851-6DA3-4BDA-8FC8-347E51D3E02E /* ShaderTest/build */ = {
+			isa = PBXGroup;
+			children = (
+				E25FDE37-7EB4-4B7D-B81A-E3DAD2298357 /* ShaderTest/build/Sources */,
+			);
+			name = "build";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F05EE35-F025-4FC5-8313-3E43F5563314 /* ShaderTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2ED3B9B-896D-4C5C-AFF2-3EDBEF7B38E6 /* Build configuration list for PBXNativeTarget "ShaderTest" */;
+			buildPhases = (
+				A6C604BD-FEB8-429C-8A41-3AB85BCEE398 /* Sources */,
+				04167F36-CD97-4B02-8BC5-285368D391AD /* Frameworks */,
+				3167C338-30ED-4F87-8F6F-D918E1AC0227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ShaderTest";
+			productName = "ShaderTest";
+			productReference = 00FB0BB6-EE4B-451C-A64E-0EB6AAB4023B /* ShaderTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8243D9F-2F59-46D4-984B-4B9B2DDA98A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "the Kore Development Team";
+				TargetAttributes = {
+					9F05EE35-F025-4FC5-8313-3E43F5563314 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = CCB1C269-1534-47CE-9341-0099EE01C240 /* Build configuration list for PBXProject "ShaderTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C28DAB6F-C477-4F79-AF0C-FA4090C93972;
+			productRefGroup = B88EC9F0-140D-46EB-9A93-EBE70653DB16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F05EE35-F025-4FC5-8313-3E43F5563314 /* ShaderTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3167C338-30ED-4F87-8F6F-D918E1AC0227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86E88C94-7227-4FB0-A481-795FB7FA5822 /* Deployment in Resources */,
+				50369F2D-9547-4D64-84C3-F82B1EE0076A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6C604BD-FEB8-429C-8A41-3AB85BCEE398 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0517DF5B-A3FB-48B7-85AA-F3E78D4DA386 /* " + file.toString() + " in Sources */,
+				602B43C1-9176-4C2F-A677-73D768B9FA7E /* " + file.toString() + " in Sources */,
+				2E35C2D7-AE85-4B8C-B6A6-754F2A8C8AFA /* " + file.toString() + " in Sources */,
+				6A6B508A-A7C0-4BCC-B28C-5F1195CCE6FE /* " + file.toString() + " in Sources */,
+				450E71E7-EC87-452A-834A-426493D1DE62 /* " + file.toString() + " in Sources */,
+				97D880BC-F271-4B37-B482-F95877569323 /* " + file.toString() + " in Sources */,
+				5E602D82-0176-400C-9D79-44BA304230DD /* " + file.toString() + " in Sources */,
+				8A936458-0271-4897-A248-E62DBF6623D9 /* " + file.toString() + " in Sources */,
+				AC3AADF9-CFDF-4C56-89F5-E82956B04E29 /* " + file.toString() + " in Sources */,
+				9F815077-4F30-4D3D-818B-53DBFA3C8FA5 /* " + file.toString() + " in Sources */,
+				0E3B09DD-498F-4AA6-BD31-9FBFB1F41824 /* " + file.toString() + " in Sources */,
+				D23D4589-70EC-4E2C-A5E9-A8FFBB2ACBC6 /* " + file.toString() + " in Sources */,
+				13E8068A-6311-4822-BBE7-EE71DAB4C2AB /* " + file.toString() + " in Sources */,
+				850A2580-A001-46FD-BD20-7E7192E0C816 /* " + file.toString() + " in Sources */,
+				47636C88-E0D2-45EA-8EDA-E9D9506CAE86 /* " + file.toString() + " in Sources */,
+				2A1C3FF4-CC09-4D57-85CC-2F981D595A43 /* " + file.toString() + " in Sources */,
+				8CBA36A9-1177-4A7F-B3E8-09F2AFF53CC6 /* " + file.toString() + " in Sources */,
+				E22FD7CB-448E-4325-8FC2-9909FAF519C9 /* " + file.toString() + " in Sources */,
+				08C4F736-EEA3-4B4B-8B78-8C79A6EEF1C8 /* " + file.toString() + " in Sources */,
+				42F80620-5581-4C04-9E5E-404A0E711B1C /* " + file.toString() + " in Sources */,
+				8218B275-41A3-4088-8D65-CA5AC106A331 /* " + file.toString() + " in Sources */,
+				54B385B4-F899-418D-A209-7338A8BE49DF /* " + file.toString() + " in Sources */,
+				FC51241C-3ED0-46C7-AB40-D05E7A3FC615 /* " + file.toString() + " in Sources */,
+				A5253978-005D-4EC8-B11A-C392E7E02841 /* " + file.toString() + " in Sources */,
+				4FF46FEC-51EC-456D-B406-D922CE17485D /* " + file.toString() + " in Sources */,
+				9B9FAE71-C729-444B-B47A-568A319F47EC /* " + file.toString() + " in Sources */,
+				F665E1FC-4642-49DB-86DD-30BB8E9C01A0 /* " + file.toString() + " in Sources */,
+				9B59BA4A-E30C-4818-9B92-30EFF975F348 /* " + file.toString() + " in Sources */,
+				9DAB638A-DBDD-4A01-AD96-BF1CEF7F6FE9 /* " + file.toString() + " in Sources */,
+				3E48C13D-1963-479C-A7F9-DC8361380E74 /* " + file.toString() + " in Sources */,
+				D9C5BB01-CAC2-4AA8-ACA5-66BA8A9BC00A /* " + file.toString() + " in Sources */,
+				52F72D9D-937D-4CD0-BCA0-DC1B144485F9 /* " + file.toString() + " in Sources */,
+				C73CE1A6-E6F8-4117-859F-449B371B2E7B /* " + file.toString() + " in Sources */,
+				8D8D0650-85C8-4926-9E6D-733E3D18CDA6 /* " + file.toString() + " in Sources */,
+				F8A3B396-9121-4C8A-89B4-ECB784C3E506 /* " + file.toString() + " in Sources */,
+				D5F0F4AB-2A73-450E-BE17-0FE4700973DA /* " + file.toString() + " in Sources */,
+				48DE32A1-C79D-4164-B820-902BF3643985 /* " + file.toString() + " in Sources */,
+				B463CED9-7FAD-4E3D-9D4D-A7AF28126DFB /* " + file.toString() + " in Sources */,
+				790F1A8B-5CF1-44DF-AE66-FDB1719BC186 /* " + file.toString() + " in Sources */,
+				2CB9B040-A2CB-475F-8458-5816F5891CED /* " + file.toString() + " in Sources */,
+				270955CE-8FC6-4A16-8791-A0067C8DE8D4 /* " + file.toString() + " in Sources */,
+				3F29A520-2AD2-4DBD-894C-E4F5FE0482FC /* " + file.toString() + " in Sources */,
+				0FA00883-74DF-4C7B-BC49-9CBD9EA264AD /* " + file.toString() + " in Sources */,
+				3895F2EF-7871-472B-8B77-21EB40D856AF /* " + file.toString() + " in Sources */,
+				72444874-1F07-47FC-86F2-399238042109 /* " + file.toString() + " in Sources */,
+				AAA37686-9371-4DE5-82A0-C41D790CD057 /* " + file.toString() + " in Sources */,
+				C11FE437-AA27-49E6-B44D-E7C2FCD71EDD /* " + file.toString() + " in Sources */,
+				9CC134DF-BB84-4979-BAB5-35E967A36E52 /* " + file.toString() + " in Sources */,
+				5FD8217C-D6A2-4D8C-8425-8785719F8E53 /* " + file.toString() + " in Sources */,
+				59A1BC36-20B1-4E9B-9BF6-0F3CED3AFA1C /* " + file.toString() + " in Sources */,
+				FD982B92-E7F2-4C15-8235-0F874381D72F /* " + file.toString() + " in Sources */,
+				2D30D987-07D4-4EFD-9696-8F39A2F2D03A /* " + file.toString() + " in Sources */,
+				38B91571-1E6B-47BF-BC18-92DF8799F98E /* " + file.toString() + " in Sources */,
+				2C8EAC92-B046-4967-8AC5-7C9A8D6C1621 /* " + file.toString() + " in Sources */,
+				EE46FB16-BB55-4218-90CE-D3CF767E1E0C /* " + file.toString() + " in Sources */,
+				F01A0756-C56A-4EBB-BD8A-2AD59757A4AF /* " + file.toString() + " in Sources */,
+				69329010-E4C7-4D9C-999A-2FEB2783A749 /* " + file.toString() + " in Sources */,
+				BCA6C33B-A64C-451A-A919-D5B41979F9A0 /* " + file.toString() + " in Sources */,
+				0302DB9D-2B7D-40BC-9C76-E9023823B039 /* " + file.toString() + " in Sources */,
+				EC0AD84C-00B5-48DB-9F9D-0ED56AC1B2F2 /* " + file.toString() + " in Sources */,
+				3D353E08-23D6-40BB-82E0-B463A40B76D8 /* " + file.toString() + " in Sources */,
+				5D0AD084-C3B2-46B9-8864-C289D6CF1236 /* " + file.toString() + " in Sources */,
+				2332F5D5-C315-45B3-BC25-CDA435681C3D /* " + file.toString() + " in Sources */,
+				FB865D60-E5C2-4A88-BFCD-5F826AD28D7F /* " + file.toString() + " in Sources */,
+				55BCAAC6-001C-45B4-8A77-6C3A8F80907D /* " + file.toString() + " in Sources */,
+				47020805-0EDD-44FA-8F3A-3029DA91BF6F /* " + file.toString() + " in Sources */,
+				C2BC874E-7C94-488C-AD2F-5BE8E20BBABB /* " + file.toString() + " in Sources */,
+				9734ED14-6F62-4D9C-98E1-F3103F0BFE22 /* " + file.toString() + " in Sources */,
+				487CE3C0-9472-408A-AA33-AA39B4BD06A3 /* " + file.toString() + " in Sources */,
+				9CF5A6BD-F1A3-4395-9589-477E71A096BC /* " + file.toString() + " in Sources */,
+				23E5E22A-A7E5-4E06-93DF-4D64D5DBD1BE /* " + file.toString() + " in Sources */,
+				AE52A1FB-036A-40A0-830F-073476A59661 /* " + file.toString() + " in Sources */,
+				67C889CF-71CD-49C2-BD8E-1125BBC3ED26 /* " + file.toString() + " in Sources */,
+				E35CEC1F-06C7-42C3-9F99-2C23BB358C49 /* " + file.toString() + " in Sources */,
+				B6F6DAF1-19E1-4946-8FED-5B3A59F173AF /* " + file.toString() + " in Sources */,
+				AA62A549-4EAA-47D1-A7FB-4C7DF10068CC /* " + file.toString() + " in Sources */,
+				9BA5B718-08E2-4C1E-B186-50E8242AE3EB /* " + file.toString() + " in Sources */,
+				3E7022C0-B009-457E-852E-BCA4A44FB2BD /* " + file.toString() + " in Sources */,
+				A0202C94-5BE1-4C92-85B8-C8BDC43E5E86 /* " + file.toString() + " in Sources */,
+				6FC5D3E6-AC40-4BC5-AE8D-8DB869429D3C /* " + file.toString() + " in Sources */,
+				75427269-5BF6-4222-AF59-C1AFD5791E7F /* " + file.toString() + " in Sources */,
+				69BE74F8-36F3-43A9-AFFB-A1DCEEF065A3 /* " + file.toString() + " in Sources */,
+				099EC34F-D11D-4D02-825F-179E77F9B96A /* " + file.toString() + " in Sources */,
+				3E12A8CD-49F4-4F75-8F9E-D9D9640DBB2F /* " + file.toString() + " in Sources */,
+				C510C123-BF0A-421A-A0D2-6A6300D60F02 /* " + file.toString() + " in Sources */,
+				EC2BA02A-A38F-4869-8D3B-2152444877FD /* " + file.toString() + " in Sources */,
+				6BA561E2-4FBF-49FF-B8E0-15C6D9BFFA03 /* " + file.toString() + " in Sources */,
+				21BB5A55-067F-4E1F-BDEB-43DE9C3155B5 /* " + file.toString() + " in Sources */,
+				94586246-D6FB-41C9-B504-5E3F1C559C74 /* " + file.toString() + " in Sources */,
+				3D3E5A67-C9BD-4DD4-B6CA-FED8D357CEA7 /* " + file.toString() + " in Sources */,
+				4E6E7DE9-854F-4A65-B760-274B9A5BA1D7 /* " + file.toString() + " in Sources */,
+				3DDD99FA-5A79-41A7-A303-43EC5DAE54A5 /* " + file.toString() + " in Sources */,
+				F8905971-0D52-419E-A424-5938FB4D84F6 /* " + file.toString() + " in Sources */,
+				050D21AF-3CBE-4EFB-AE8C-B317FEE74A29 /* " + file.toString() + " in Sources */,
+				6530B4BE-EDE9-4511-A9CF-976A71D3F5C6 /* " + file.toString() + " in Sources */,
+				B90A51A9-5D8D-4135-92D8-E4098D917CD9 /* " + file.toString() + " in Sources */,
+				81BF80F1-EAD2-4560-90B7-EB51B4C1A080 /* " + file.toString() + " in Sources */,
+				E1FDFAF7-670D-4BF5-AF1B-696D77E18728 /* " + file.toString() + " in Sources */,
+				2EE005E7-4B74-4E5E-9BAC-775373B609F1 /* " + file.toString() + " in Sources */,
+				205B6D37-8A98-4325-9360-59BCCE0D0895 /* " + file.toString() + " in Sources */,
+				E1ED7C1B-84DD-4E9E-86E1-BB0C1BFA3363 /* " + file.toString() + " in Sources */,
+				73548A10-71AF-445C-8E2D-C7990D0CE0BC /* " + file.toString() + " in Sources */,
+				B1319D02-CC77-4D4E-9416-F60B27D6E161 /* " + file.toString() + " in Sources */,
+			);
+runOnlyForDeploymentPostprocessing = 0;
+};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D0CE1CD1-C8EA-4E53-BB48-952431FD2CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					KORE_G1,
+					KORE_G2,
+					KORE_G3,
+					KORE_A1,
+					KORE_A2,
+					KORE_MACOS,
+					KORE_METAL,
+					KORE_POSIX,
+					KORE_G4,
+					KORE_G5,
+					KORE_G4ONG5,
+					KORE_A3,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CCE0277E-259A-40DF-B0DE-17A9D3798BFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					KORE_G1,
+					KORE_G2,
+					KORE_G3,
+					KORE_A1,
+					KORE_A2,
+					KORE_MACOS,
+					KORE_METAL,
+					KORE_POSIX,
+					KORE_G4,
+					KORE_G5,
+					KORE_G4ONG5,
+					KORE_A3,
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A3661850-1855-4034-A337-BAA1E79CA5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"/Users/dbarber/Development/KoreMetalTest/Kore/Sources",
+					"/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources",
+					"/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources",
+					"/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources",
+					"/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources",
+					"/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources",
+					"/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Audio3/A3onA2/Sources",
+				);
+				LIBRARY_SEARCH_PATHS = (
+				);
+				INFOPLIST_EXPAND_BUILD_SETTINGS = "YES";
+				INFOPLIST_FILE = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/mac.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tech.kode.$(PRODUCT_NAME:rfc1034identifier)";
+				BUNDLE_VERSION = "1.0";
+				BUILD_VERSION = "1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF1D007C-A406-4538-AC5F-D866AF6E1CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"/Users/dbarber/Development/KoreMetalTest/Kore/Sources",
+					"/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/Apple/Sources",
+					"/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources",
+					"/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/POSIX/Sources",
+					"/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics5/Metal/Sources",
+					"/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Graphics4/G4onG5/Sources",
+					"/Users/dbarber/Development/KoreMetalTest/Kore/Backends/Audio3/A3onA2/Sources",
+				);
+				INFOPLIST_EXPAND_BUILD_SETTINGS = "YES";
+				INFOPLIST_FILE = "/Users/dbarber/Development/KoreMetalTest/Kore/Backends/System/macOS/Sources/Kore/mac.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "tech.kode.$(PRODUCT_NAME:rfc1034identifier)";
+				BUNDLE_VERSION = "1.0";
+				BUILD_VERSION = "1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCB1C269-1534-47CE-9341-0099EE01C240 /* Build configuration list for PBXProject "ShaderTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0CE1CD1-C8EA-4E53-BB48-952431FD2CC8 /* Debug */,
+				CCE0277E-259A-40DF-B0DE-17A9D3798BFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2ED3B9B-896D-4C5C-AFF2-3EDBEF7B38E6 /* Build configuration list for PBXNativeTarget "ShaderTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3661850-1855-4034-A337-BAA1E79CA5D1 /* Debug */,
+				EF1D007C-A406-4538-AC5F-D866AF6E1CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8243D9F-2F59-46D4-984B-4B9B2DDA98A8 /* Project object */;
+}
