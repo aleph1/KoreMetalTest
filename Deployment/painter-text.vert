@@ -1,1 +1,1 @@
-painter_text_vert_main
+>painter_text_vert_main
